@@ -1,0 +1,129 @@
+package idd05_xml;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.IOUtils;
+
+import com.jcraft.jsch.Channel;
+import com.jcraft.jsch.ChannelSftp;
+import com.jcraft.jsch.JSch;
+import com.jcraft.jsch.Session;
+
+public class UK_IDD05_Adjstmnt {
+
+	public static  void send (String fileName, String data,String SFTPWORKINGDIR) {
+		String SFTPHOST = "tb-test.ftpstream.com";
+		int SFTPPORT = 22;
+		String SFTPUSER = "mulesoft_test";
+		String SFTPPASS = "T3dbak3R!89898";
+		
+		Session session = null;
+		Channel channel = null;
+		ChannelSftp channelSftp = null;
+		//        System.out.println("preparing the host information for sftp.");
+		try {
+			JSch jsch = new JSch();
+			session = jsch.getSession(SFTPUSER, SFTPHOST, SFTPPORT);
+			session.setPassword(SFTPPASS);
+			java.util.Properties config = new java.util.Properties();
+			config.put("StrictHostKeyChecking", "no");
+			session.setConfig(config);
+			session.connect();
+			//            System.out.println("Host connected.");
+			channel = session.openChannel("sftp");
+			channel.connect();
+			//            System.out.println("sftp channel opened and connected.");
+			channelSftp = (ChannelSftp) channel;
+			channelSftp.cd(SFTPWORKINGDIR);
+			//            File f = new File(fileName);
+			channelSftp.put(IOUtils.toInputStream(data), fileName);
+			            System.out.println("File copied successfully"+ fileName);
+		} catch (Exception ex) {
+			System.out.println("Exception found while tranfer the response.");
+		}
+		finally{
+
+			channelSftp.exit();
+			//            System.out.println("sftp Channel exited.");
+			channel.disconnect();
+			//            System.out.println("Channel disconnected.");
+			session.disconnect();
+			//            System.out.println("Host Session disconnected.");
+		}
+	}   
+
+
+	public static void main(String[] args) throws IOException {
+		
+		Integer sku_id = 20000;
+		String sku_id_prefix = "50575415";
+
+		int totalfiles= 960;
+		int timeinterval=60000;  //time is in millisecs(1min) Thread.sleep()
+		int fileschunk=2;
+
+		for(int j=1;j<=totalfiles;j++) //number of files		
+		{
+			String FileName="";
+			String xml = "";
+
+			xml += "<dcsextractdata xsi:noNamespaceSchemaLocation=\"http://edi-prod.usffcl.com/schemas/TB-Test/extract_ITL.xsd\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">";
+
+			xml += "<dataheaders>" +
+					"<dataheader>"  +
+					"<record_type>ITL</record_type>" + 
+					"<action>E</action> " +
+					"<code>Adjustment</code>" + 
+					"<original_quantity_sign>+</original_quantity_sign>" + 
+					"<original_qty>1</original_qty>" + 
+					"<update_quantity_sign>+</update_quantity_sign>" + 
+					"<update_qty>1</update_qty>"+
+					"<dstamp>20180427200120</dstamp>" + 
+					"<client_id>TEDB1</client_id>" +
+					"<sku_id>" +sku_id_prefix+ sku_id + "</sku_id>"+
+					"<condition_id></condition_id>"+
+					"<notes>ABC-&gt;DEF</notes>" + 
+					"<reason_id>as found</reason_id>"+
+					"<site_id>DERBY</site_id>" ; 
+
+			sku_id++;
+
+			//System.out.println(j);
+
+			xml += "	</dataheader>" +
+					"</dataheaders>";
+
+			xml += "</dcsextractdata>";
+
+			boolean SFTP = !false;
+			
+			if ( !SFTP ){
+				FileName="D:\\Projects\\Performance Testing\\TED Baker-Adapter\\IDD05_IDD15\\Testdata_1DD05\\UK\\IDD05UK_Adjstmnts_"+ (DateTimeFormatter.ofPattern("ddMMMM").format(LocalDateTime.now()))+"_Test_".concat(Integer.toString(j)).concat(".xml");
+
+				FileUtils.writeStringToFile(new File(FileName), xml);
+			}
+			else{
+				String SFTPWORKINGDIR = "/Warehouse/TBUS_Future/AX_Inbound/XPO-LOADT/Stock_ITL/1_To_Upload/";
+
+				String filename = "IDD05UK_Adjstmnts_" + (DateTimeFormatter.ofPattern("ddMMMM").format(LocalDateTime.now()))+"_Test_".concat(Integer.toString(j)).concat(".xml");
+				send(filename,xml,SFTPWORKINGDIR);
+			}
+			if ( j % fileschunk == 0 ){
+				try {
+					Thread.sleep(timeinterval);
+					
+					
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		}
+	}
+
+}

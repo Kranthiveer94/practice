@@ -1,0 +1,53 @@
+package practice_01;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.sikuli.script.FindFailed;
+import org.sikuli.script.Pattern;
+import org.sikuli.script.Screen;
+
+final class Cloudhub {
+
+	public static void main(String[] args) throws InterruptedException, FindFailed {
+		System.setProperty("webdriver.chrome.driver","D://workspace//chromedriver_win32 (1)//chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+        driver.navigate().to("https://anypoint.mulesoft.com/login/signin");
+        Thread.sleep(3000l);
+        //driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+//        driver.findElement(By.name("username")).sendKeys("kranthiveer_t");
+//        driver.findElement(By.name("password")).sendKeys("1Kranthi@@");
+        Actions username = new Actions(driver);
+        username.moveToElement(driver.findElement(By.name("username")));
+        username.click();
+        username.sendKeys("kranthiveer_t");
+        username.build().perform();
+        Actions pwd = new Actions(driver);
+        pwd.moveToElement(driver.findElement(By.name("password")));
+        pwd.click();
+        pwd.sendKeys("1Kranthi@@");
+        pwd.build().perform();
+        driver.findElement(By.xpath("//button[@class='button components--submit__H5Trjz DefaultTheme__button___29mtS DefaultTheme__primary___249es']")).click();
+       // driver.findElement(By.xpath("/html/body/div[1]/div/div[2]/div/div/div/section[1]/div/div[2]/div/ol/li[3]/a/div/span[2]")).click();
+        // driver.findElement(By.linkText("Runtime Manager")).click();
+        
+        Screen scr= new Screen();
+        
+        Pattern runtime=new Pattern("D:\\workspace\\sikuli pics\\runtime menager.PNG");
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        scr.click(runtime);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+       // driver.findElement(By.xpath("//div[@class='environment-name ng-binding']")).click();
+        driver.findElement(By.linkText("SIT")).click();
+        
+        //        Actions signin= new Actions(driver);
+//        signin.moveToElement(driver.findElement(By.linkText("Sign in")));
+//        signin.click();
+//        signin.build().perform();
+	}
+
+}

@@ -1,0 +1,31 @@
+package practice_01;
+
+import java.io.File;
+import java.io.IOException;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Passing_variables {
+	
+	void a(int a, int b){
+		int c= a+b;
+		System.out.println(c);
+		
+	}
+
+	public static void main(String[] args) {
+		WebDriver driver= new ChromeDriver();
+		Passing_variables p=new Passing_variables();
+		p.a(10, 20);
+		File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		 // now copy the  screenshot to desired location using copyFile //method
+		FileUtils.copyFile(src, new File("C:/selenium/error.png"));
+		
+		  //System.out.println(e.getMessage());
+		 
+		 
+	}
+
+}

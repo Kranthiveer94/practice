@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/testgenerator_SFTP path/testgenerator_SFTP path/testgenerator_SFTP path/src/main/java/IDD04_EcommXML.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="IDD04_EcommXML"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="testgenerator_SFTP path"/>
+</launchConfiguration>

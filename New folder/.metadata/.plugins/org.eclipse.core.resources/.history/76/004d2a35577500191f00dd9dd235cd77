@@ -1,0 +1,87 @@
+import java.io.File;
+import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+import org.apache.commons.io.FileUtils;
+
+import idd05_xml.UK_IDD05_Adjstmnt;
+
+public class IDD04_EcommXML {
+
+	
+	public static void main(String[] args) throws IOException {
+IDD04_EcommXML t=new IDD04_EcommXML();
+t.IDD04();
+
+}
+private static void IDD04() throws IOException
+		{
+		
+		String outputdata = "";
+		long gSku = 5057541413702L;
+		
+		
+		int N = 27; //number of order_ids
+		int totalfiles= 1;
+		int timeinterval=10000;  //time is in millisecs(5mins) Thread.sleep()
+		int fileschunk=1;
+		{
+
+		
+		for(int j=1;j<=totalfiles;j++) //number of files
+		{
+			int temp=j;
+			outputdata = "";
+
+			//System.out.println();
+			outputdata +="Sku,order_line_number,line_quantity,picked_quantity,Status,store_number,tracking_code,delivery_mode,Warehouse,invent_trans_id";
+			outputdata += "\n";
+
+			for(int orderId=0; orderId< N; orderId++) //number of order_ids
+			{
+			 
+				
+					long HostOrderId = gSku + 1;
+					
+					//System.out.println(N);
+					
+					String data =""+HostOrderId+",WSI000777,4,4,\"Ready to Load\",3269693623,1122334455,WHOLESALE,WHUSATL,SLID049732301";
+					outputdata = outputdata +  data + "\n";
+					//System.out.println(outputdata);		
+				
+
+									
+			}
+
+			
+			String FileName="";
+		boolean SFTP = !false;
+		if ( !SFTP ){
+			FileName="D:\\Projects\\Performance Testing\\TED Baker-Adapter\\IDD04\\Testdata\\US\\EC\\IDD04US_EComm_"+ (DateTimeFormatter.ofPattern("ddMMMM").format(LocalDateTime.now()))+"_Test_".concat(Integer.toString(temp)).concat(".csv");
+
+			FileUtils.writeStringToFile(new File(FileName), outputdata,"UTF-16");
+		}
+		else{
+
+			String SFTPWORKINGDIR = "/Warehouse/TBUK/AX_Inbound/Shipment_Confirmation/1_To_Upload/";
+
+			String filename = "IDD04UK_EComm_" + (DateTimeFormatter.ofPattern("ddMMMM").format(LocalDateTime.now()))+"_Test_".concat(Integer.toString(j)).concat(".csv");
+			UK_IDD05_Adjstmnt.send(filename,outputdata,SFTPWORKINGDIR);
+		}
+		if ( j % fileschunk == 0 ){
+			try {
+				Thread.sleep(timeinterval);
+				
+				
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+}
+
+}}
+
+

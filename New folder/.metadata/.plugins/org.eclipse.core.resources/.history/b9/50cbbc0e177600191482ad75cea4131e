@@ -1,0 +1,101 @@
+package testgenerator;
+
+import java.io.File;
+import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+import org.apache.commons.io.FileUtils;
+
+import idd05_xml.UK_IDD05_Adjstmnt;
+
+public class UK_IDD03_Ecomm {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+
+		UK_IDD03_Ecomm t= new UK_IDD03_Ecomm();
+		t.IDD03();
+	}
+	
+	// IDD03_UK_EComm csv generation	
+   private static void IDD03() throws IOException 
+	
+	{
+		String outputdata = "";
+		Long gBarCode = 5057500000200L;
+		int gOrderCode = 101000;
+		String gOrderCode_prefix = "USSO";
+		String HostLineID_prefix ="SLID0";
+		int HostLineID_sufix= 50395660;
+		// ShipmentId eg. 50002345A
+		String ShipmentId_prefix= "5000";
+		int ShipmentId_mid = 1000;
+		String ShipmentId_sufix="A";
+		
+		int N = 27; //number of order_ids
+		int totalfiles= 3;
+		int timeinterval=10000;  //time is in millisecs(5mins) Thread.sleep()
+		int fileschunk=1;
+		
+		for(int k =1; k<=totalfiles; k++) //number of files
+		{
+			outputdata = "";
+
+			//System.out.println();
+			outputdata +="\"CountryRegionId\",CustAccount,HostLineId,HostOrderId,\"InvCountryRegionId\",InventTransId,itemBarCode,LocationId,OrderId,ProductCurrency,SalesOrderCategory,UnitOfMeasure,\"Address\",\"AddressName\",BookingRef,CarrierId,\"City\",CompanyID,ConditionCode,\"ContactEmail\",\"ContactFax\",\"ContactName\",\"ContactPhone\",\"County\",DeliverByDate,DespatchMethod,\"GiftMessage\",\"Instructions\",\"InvAddress\",\"InvAddressName\",\"InvCity\",\"InvContactEmail\",\"InvContactFax\",\"InvContactName\",\"InvContactPhone\",\"InvCounty\",InventStatusId,\"InvStreet\",\"InvZipCode\",ItemId,LineAmount,OrderDateTime,ProductPrice,Qty,RelatedPurchaseOrder,RequestedDeliveryDate,SalesScenario,ServiceLevel,ShipByDateTime,ShipmentId,\"Street\",TrusteeAuthorization,TrusteeBarcode,TrusteeCategory,TrusteeColour,TrusteeDeliveryDateTime,TrusteeItem,TrusteeLineNumber,TrusteePONumber,\"ZipCode\",VATAmount,ChargeCode,ChargeAmount,ChargeVatAmount,\"State\",\"InvState\",Warehouse";
+			outputdata += "\n";
+
+			for(int orderId=0; orderId< N; orderId++) //number of order_ids
+			{
+			  for(int barCode = 0; barCode < 4; barCode++) //number of barcodes or shipment ids
+				{
+
+					String HostOrderId = gOrderCode_prefix + gOrderCode;
+					String itemBarCode = gBarCode.toString();
+					gBarCode++;
+					//New change for HostLineId and InventTransId
+
+					String HostLineId = HostLineID_prefix + HostLineID_sufix ;
+					HostLineID_sufix++;
+					String InventTransId= HostLineId;
+
+					String ShipmentId= ShipmentId_prefix+ShipmentId_mid+ShipmentId_sufix;
+					ShipmentId_mid++;
+
+					//System.out.println(N);
+					
+					String data ="\"GBR\",CGB598953,"+ HostLineId +","+ HostOrderId +",\"GBR\","+InventTransId+","+itemBarCode+",002914284,"+HostOrderId+",GBP,ONLINE,Units,\"50 New Bond Street, London - - W1S 1BJ GBR\",\"Riccardo Napolitano\",,,\"London\",tbuk,,\"\",\"\",\"Riccardo Napolitano\",\"+447904105966\",\"-\",,,\"\",\"\",\"50 New Bond Street, London - - W1S 1BJ GBR\",\"Riccardo Napolitano\",\"London\",\"\",\"\",\"Riccardo Napolitano\",\"+447904105966\",\"-\",O-EUROPE,\"50 New Bond Street,\",\"W1S 1BJ\",131457,62.1000000000000000,09/02/2018 14:30:22,62.1000000000000000,1,,,E-Commerce,,,"+ShipmentId+",\"50 New Bond Street,\",,,,,,,,,\"W1S 1BJ\",10.3500000000000000,UKSTDDEL,.0000000000000000,.0000000000000000,\"-\",\"-\",SFSES";
+					outputdata = outputdata +  data + "\n";
+					//System.out.println(outputdata);		
+				}
+
+				gOrderCode++;					
+			}
+
+			//try {
+				//FileUtils.writeStringToFile(new File("D:\\Projects\\Performance Testing\\TED Baker-Adapter\\IDD03\\XPO-UK\\Ecomm\\UK_IDD03EComm_"+ (DateTimeFormatter.ofPattern("dd-MMMM").format(LocalDateTime.now()))+"_Test_"+ k +".csv"), outputdata,"UTF-16");
+				//FileUtils.writeStringToFile(new File("D:\\Projects\\Performance Testing\\TED Baker-Adapter\\IDD03\\Testdata\\UK_IDD03EComm_Test_"+ k +".csv"), outputdata);
+
+			FileUtils.writeStringToFile(new File("//D:\\Kranthiveer\\SFS\\Shipment conf\\performance\\UK_IDD03EComm_"+ (DateTimeFormatter.ofPattern("dd-MMMM").format(LocalDateTime.now()))+"_Test_"+ k +".csv"), outputdata,"UTF-16");
+			
+//			String SFTPWORKINGDIR = "//D:\\Kranthiveer\\SFS\\Shipment conf\\performance\\";
+//
+//			String filename = "IDD04UK_EComm_" + (DateTimeFormatter.ofPattern("ddMMMM").format(LocalDateTime.now()))+"_Test_".concat(Integer.toString(k)).concat(".csv");
+//			FileUtils.writeStringToFile(new File(filename, outputdata,"UTF-16");
+//			UK_IDD05_Adjstmnt.send(filename,outputdata,SFTPWORKINGDIR);
+			//System.out.println("File copied successfully"+  filename);
+			if ( k % fileschunk == 0 ){
+				try {
+					Thread.sleep(timeinterval);
+		} 
+		catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			}
+
+		}
+
+	}
+
+}}

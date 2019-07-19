@@ -1,0 +1,112 @@
+import java.io.File;
+import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+import org.apache.commons.io.FileUtils;
+
+import idd05_xml.UK_IDD05_Adjstmnt;
+
+public class IDD04_EcommXML {
+
+	
+	public static void main(String[] args) throws IOException {
+
+		Integer order_id = 500000;
+		Integer sku_id = 10000;
+		Integer transaction_id = 1000;
+
+		int totalfiles= 1;
+		int timeinterval=1000;  //time is in millisecs(10min) Thread.sleep()
+		int fileschunk=1;
+
+		for(int j=1;j<=totalfiles;j++) //number of files
+		{
+			// TODO Auto-generated method stub
+			String FileName="";
+			String xml = "";
+
+			xml += "<dcsmergedata xsi:noNamespaceSchemaLocation=\"http://edi-prod.usffcl.com/schemas/TB-Test/interface_shipment_confirmation.xsd\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">";
+
+			String order_id_suffix = "13A_TEST" ;
+			String host_order_id_suffix = "13A";
+
+			//Integer host_order_id = 1000;
+
+			int temp=j;
+			order_id=order_id+j;
+
+			xml += "<dataheaders>" +
+					"<dataheader>"  +
+					"<order_id>" + order_id + order_id_suffix+"</order_id>" + 
+					"<order_type> E-COMMERCE</order_type> " +
+					"<host_order_id>" + order_id + host_order_id_suffix+ "</host_order_id>" + 
+					"<warehouse>WHUSATL</warehouse>" + 
+					"<order_header>" + 
+					"<status>Shipped</status>" + 
+					"<consignment_number>1Z703Y4W6893289753</consignment_number>"+
+					"<weight>3</weight>" + 
+					"</order_header>" ;
+
+			int N = 4; //number of order lines
+			//int N = 100;
+
+			String sku_id_prefix = "505478658";
+			String transaction_id_prefix = "SLID05020";
+			
+			for(int i=0; i< N; i++ )
+			{
+
+				xml += "<order_line><line_id>2</line_id>" ;
+
+				xml += 		"<sku_id>" +sku_id_prefix+ sku_id + "</sku_id>"+
+						"<quantity>1</quantity>"+
+						"<transaction_id>" + transaction_id_prefix + transaction_id + "</transaction_id>" + 
+						"<legal_entity>TBUS</legal_entity>" + 
+						"<shipment_manifest>" + 
+						"<quantity>1</quantity>"+
+						"<container_id>0000002398</container_id>" + 
+						"</shipment_manifest>"+ 
+						"</order_line>";
+
+				sku_id++;
+				transaction_id++;
+
+				System.out.println(j);
+			}
+
+		xml += "	</dataheader>" +
+				"</dataheaders>";
+
+
+		xml += "</dcsmergedata>";
+		
+		boolean SFTP = !false;
+		if ( !SFTP ){
+			FileName="D:\\Projects\\Performance Testing\\TED Baker-Adapter\\IDD04\\Testdata\\US\\EC\\IDD04US_EComm_"+ (DateTimeFormatter.ofPattern("ddMMMM").format(LocalDateTime.now()))+"_Test_".concat(Integer.toString(temp)).concat(".xml");
+
+			FileUtils.writeStringToFile(new File(FileName), xml);
+		}
+		else{
+
+			String SFTPWORKINGDIR = "/Warehouse/TBUK/AX_Outbound/DEV/Stock/1_To_Upload/";
+
+			String filename = "IDD04US_EComm_" + (DateTimeFormatter.ofPattern("ddMMMM").format(LocalDateTime.now()))+"_Test_".concat(Integer.toString(j)).concat(".xml");
+			UK_IDD05_Adjstmnt.send(filename,xml,SFTPWORKINGDIR);
+		}
+		if ( j % fileschunk == 0 ){
+			try {
+				Thread.sleep(timeinterval);
+				
+				
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+}
+
+}
+
+
