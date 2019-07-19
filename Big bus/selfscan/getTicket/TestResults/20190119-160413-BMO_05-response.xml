@@ -1,0 +1,90 @@
+{
+  "status": "SUCCESS",
+  "code": "200",
+  "message": "",
+  "bookingResult": {
+    "status": "SUCCESS",
+    "bookingReference": "8b3de34d-8764-410b-abcb-883f12ecf976",
+    "userReference": "Chameleon: customRef123",
+    "shortReference": "LGUM",
+    "dateOfBooking": "1545004800",
+    "currencyCode": "GBP",
+    "totalPrice": "40",
+    "leadGuest": {
+      "firstname": "Test",
+      "lastname": "Test",
+      "email": "abc@test.com",
+      "phone": "1234567890",
+      "mobile": "1234567890"
+    },
+    "branch": [
+      {
+        "id": "1",
+        "name": "London",
+        "tickets": [
+          {
+            "state": "LIVE",
+            "barCodeCategory": "HoHo",
+            "ticketType": "QR_CODE",
+            "ticketBarCode": "FTBENQRBVCPWJAEJKZNSRDRSPGKDNVMKPEKRETYNOSHZPGWLFQUWVAAGXORUKFCBJQLBIHKZFBZTUQCCXIETJXXBGWEZXVSCAPNAPDKHEPAAEFKCYOGESPLRWXHTLPUPRMZXRHEJUYZLBIEQIOYAEHYTAAPYYYCSJHNWRTNJCEKWWIPXZJZXLARVDKDVHFDAHCBRTUYFPHHFSHSBNLCUIOPKEHIUKA",
+            "ticketId": "BBLK2OGRY6J",
+            "embeddedInBarcode": [
+              {
+                "id": "14477",
+                "name": "Deluxe Ticket",
+                "passengers": [
+                  {
+                    "price": "10.00",
+                    "category": "Child",
+                    "quantity": "2"
+                  }
+                ],
+                "isInclusion": "false"
+              }
+            ],
+            "validFrom": "1545042838.380",
+            "validTill": "1560764338.379",
+            "usageInDays": "3",
+            "usageFrom": null,
+            "usageTill": null
+          },
+          {
+            "state": "LIVE",
+            "barCodeCategory": "Attr",
+            "ticketType": "QR_CODE",
+            "ticketBarCode": "FTBETZVYFORTGEFKJVNLRXNTLTTPNAXRVIIIRPQCCLWZCIQUXHHPJKCUZXVYDVYXLLCEKCPCMEHJQXNBYBUTSWWYKLYDGYYJLESQAZZHYXFQXNADEHEGHCCGOROEIHOPKQJOBFIXOBAZPWOVCDPLGKYHWFNDPLEHNPBHHWLUBHZHICMCCWZMBSJEVQBKVIDXXYLRRQVLUCCPZMJGPNZPDGEOERJSBF",
+            "ticketId": "BBNX5YVMG5V",
+            "embeddedInBarcode": [
+              {
+                "id": "13418",
+                "name": "Bonus Return Cruise",
+                "passengers": [
+                  {
+                    "price": "0",
+                    "category": "Child",
+                    "quantity": "2"
+                  }
+                ],
+                "isInclusion": "true"
+              },
+              {
+                "id": "1840",
+                "name": "Bonus Night Tour",
+                "passengers": [
+                  {
+                    "price": "0",
+                    "category": "Child",
+                    "quantity": "2"
+                  }
+                ],
+                "isInclusion": "true"
+              }
+            ],
+            "validFrom": "1545042838.386",
+            "validTill": "1560764338.385"
+          }
+        ]
+      }
+    ]
+  }
+}

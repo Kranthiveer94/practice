@@ -1,0 +1,62 @@
+[
+  {
+    "status": "SUCCESS",
+    "code": "200",
+    "ticketId": "BBX5Y1Q9W6V",
+    "state": "LIVE",
+    "validFrom": "1546592496.582",
+    "validTill": "1562227596.581",
+    "usageFrom": "",
+    "usageTill": ""
+  },
+  {
+    "status": "SUCCESS",
+    "code": "200",
+    "ticketId": "BBZ6WKQ496Y",
+    "state": "LIVE",
+    "validFrom": "1546592496.587",
+    "validTill": "1562227596.586",
+    "usageFrom": "",
+    "usageTill": ""
+  },
+  {
+    "status": "SUCCESS",
+    "code": "200",
+    "ticketId": "BBQ24MZXD6O",
+    "state": "LIVE",
+    "validFrom": "1546592496.593",
+    "validTill": "1562227596.592",
+    "usageFrom": "",
+    "usageTill": ""
+  },
+  {
+    "status": "SUCCESS",
+    "code": "200",
+    "ticketId": "BB82ZYQJG5N",
+    "state": "LIVE",
+    "validFrom": "1546592496.598",
+    "validTill": "1562227596.597",
+    "usageFrom": "",
+    "usageTill": ""
+  },
+  {
+    "status": "SUCCESS",
+    "code": "200",
+    "ticketId": "BBO5RW0L16R",
+    "state": "LIVE",
+    "validFrom": "1546592496.604",
+    "validTill": "1562227596.603",
+    "usageFrom": "",
+    "usageTill": ""
+  },
+  {
+    "status": "SUCCESS",
+    "code": "200",
+    "ticketId": "BBJ539ZGQ5E",
+    "state": "LIVE",
+    "validFrom": "1546592496.610",
+    "validTill": "1562227596.609",
+    "usageFrom": "",
+    "usageTill": ""
+  }
+]

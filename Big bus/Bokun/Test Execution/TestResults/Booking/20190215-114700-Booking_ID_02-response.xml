@@ -1,0 +1,45 @@
+{
+  "status": "SUCCESS",
+  "code": "",
+  "message": "",
+  "bookingResult": {
+    "status": "BOOKED",
+    "subAgentReference": "Bokun-subAgentCode",
+    "bookingReference": "209636b3-62e1-4fbb-8c41-97b54fa71604",
+    "shortReference": "LRVL",
+    "dateOfBooking": "2019-02-15",
+    "underName": {
+      "firstname": "vimala",
+      "lastname": "pradaga",
+      "email": "vimala.pradaga@gmail.com",
+      "phone": "8099566093",
+      "mobile": "8099566093"
+    },
+    "products": {
+      "product": [
+        {
+          "productId": "74503",
+          "dateOfTravel": "2019-02-27",
+          "items": [
+            {
+              "category": "Adult ",
+              "quantity": "1",
+              "ticketType": "QR_CODE",
+              "ticketBarCode": "10159051|7|27022019|1[74503AD:1:4900:USD]8e2f2b8d25223ffc",
+              "message": null,
+              "image": null
+            },
+            {
+              "category": "Adult ",
+              "quantity": "1",
+              "ticketType": "QR_CODE",
+              "ticketBarCode": "10159052|7|27022019|1[74503AD:1:4900:USD]ee829b5c3d75e597",
+              "message": null,
+              "image": null
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

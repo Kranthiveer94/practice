@@ -1,0 +1,56 @@
+{
+  "status": "SUCCESS",
+  "code": "200",
+  "message": "",
+  "bookingResult": {
+    "status": "SUCCESS",
+    "bookingReference": "0f4c2529-e91f-462f-885a-bf24766e388d",
+    "userReference": "Chameleon: customRef123",
+    "shortReference": "LGTU",
+    "dateOfBooking": "1545004800",
+    "currencyCode": "GBP",
+    "totalPrice": "20",
+    "leadGuest": {
+      "firstname": "Test",
+      "lastname": "Test",
+      "email": "abc@test.com",
+      "phone": "1234567890",
+      "mobile": "1234567890"
+    },
+    "branch": [
+      {
+        "id": "1",
+        "name": "London",
+        "tickets": [
+          {
+            "state": "LIVE",
+            "barCodeCategory": "Attr",
+            "ticketType": "QR_CODE",
+            "ticketBarCode": "FTBEWZRMQPGYOUULMZZTXCKOSEUDGJFNZFYVDQRXNNYAJSWFYJPCBTUZXSAAEJCNGRLIVZXCUNNCUAKMPDHPLUJLOSIFYWCLXRTHVMWYKDQBBXTLADJNUGUYANGVZYLNABUHDONZLSCFCPEDANBVUQROWFELNJMZSKWZMYQNPCMZUGACKVLIMNSICWTTRBBZMPFGKKRKRIIOPVPIQSWTGIIWCVBHJM",
+            "ticketId": "BBPN6PXM92M",
+            "embeddedInBarcode": [
+              {
+                "id": "14940",
+                "name": "Central London Pass",
+                "passengers": [
+                  {
+                    "price": "0",
+                    "category": "Child",
+                    "quantity": "2"
+                  }
+                ],
+                "isInclusion": "true"
+              }
+            ],
+            "validFrom": "1545040540.059",
+            "validTill": "1560762040.058"
+          }
+        ]
+      },
+      {
+        "id": "1",
+        "name": "London"
+      }
+    ]
+  }
+}

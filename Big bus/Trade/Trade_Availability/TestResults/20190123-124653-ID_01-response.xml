@@ -1,0 +1,1 @@
+{   "status": "ERROR",   "code": "BB-200",   "message": "Please pass valid productId" ,"availabilityResult": {"status":"NOT_AVAILABLE"} }

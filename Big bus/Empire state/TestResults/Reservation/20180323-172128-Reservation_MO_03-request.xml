@@ -1,0 +1,40 @@
+{
+"reservationRequest": 
+{
+   "reservationFee": "5",
+   "currencyCode": "",
+   "paymentMethod": "USD",
+   "notes": "custom notes",
+   "reserveUntil": "2018-04-22",
+   "underName":    
+   {
+      "firstname": "Vimala",
+      "lastname": "Pradaga",
+      "email": "vimala.pradaga@gmail.com",
+      "phone": "1234567890",
+      "mobile": "1234567890"
+   },
+   "products":
+   {
+   "product": 
+   [   
+   {
+      "productId": "3GZ00103",
+      "eventId": "2018-04-22",
+      "dateOfTravel": "Adult",
+      "items":       
+	  [
+         {
+            "category": "2",
+            "quantity": "Child"
+         },
+         {
+            "category": "1",
+            "quantity": ""
+         }
+      ]
+   }
+   ]
+   }
+}
+}

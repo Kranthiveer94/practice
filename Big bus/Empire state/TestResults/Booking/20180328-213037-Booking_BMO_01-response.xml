@@ -1,0 +1,52 @@
+{
+  "status": "SUCCESS",
+  "code": "",
+  "message": "",
+  "bookingResult": {
+    "status": "BOOKED",
+    "bookingReference": "448e829b-8226-4959-9182-93086bee7139",
+    "shortReference": "BGEN",
+    "dateOfBooking": "2018-03-28",
+    "leadGuest": {
+      "firstname": "vimala",
+      "lastname": "pradaga",
+      "email": "vimala.pradaga@gmail.com",
+      "phone": "8099566093",
+      "mobile": "8099566093"
+    },
+    "products": {
+      "product": [
+        {
+          "productId": "3GZ00103",
+          "dateOfTravel": "2018-05-10",
+          "items": [
+            {
+              "category": "Child",
+              "quantity": "1",
+              "ticketType": "QR_CODE",
+              "ticketBarCode": "301030025000111048",
+              "message": null,
+              "image": null
+            },
+            {
+              "category": "Adult ",
+              "quantity": "1",
+              "ticketType": "QR_CODE",
+              "ticketBarCode": "301030025000111046",
+              "message": null,
+              "image": null
+            },
+            {
+              "category": "Adult ",
+              "quantity": "1",
+              "ticketType": "QR_CODE",
+              "ticketBarCode": "301030025000111047",
+              "message": null,
+              "image": null
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

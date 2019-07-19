@@ -1,0 +1,1 @@
+{    "status": "ERROR",   "code": "BB-202",   "message": "category is required(eg: Adult or Child)","reservationResult": {"status":"NOT_RESERVED"} }

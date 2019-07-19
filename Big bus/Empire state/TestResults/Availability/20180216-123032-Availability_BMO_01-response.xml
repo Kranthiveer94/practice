@@ -1,0 +1,22 @@
+{
+  "availabilityCheckResult": {
+    "status": "SUCCESS",
+    "errorCode": "",
+    "errorMessage": "",
+    "availabilityResult": {
+      "productCode": "3GZ00201",
+      "events": [
+        {
+          "id": "0000654574-0000000219",
+          "available": 100,
+          "startDateTime": "2018-02-25T09:00:00",
+          "endDateTime": "2018-02-25T19:00:00",
+          "status": "Available"
+        }
+      ]
+    }
+  },
+  "noServiceDates": [
+    "07-04,12-31"
+  ]
+}

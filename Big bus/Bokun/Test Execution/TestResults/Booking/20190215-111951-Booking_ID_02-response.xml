@@ -1,0 +1,45 @@
+{
+  "status": "SUCCESS",
+  "code": "",
+  "message": "",
+  "bookingResult": {
+    "status": "BOOKED",
+    "subAgentReference": "Bokun-subAgentCode",
+    "bookingReference": "c1c75d96-2824-4371-81b0-b5aa4fd3a137",
+    "shortReference": "LRU4",
+    "dateOfBooking": "2019-02-15",
+    "underName": {
+      "firstname": "vimala",
+      "lastname": "pradaga",
+      "email": "vimala.pradaga@gmail.com",
+      "phone": "8099566093",
+      "mobile": "8099566093"
+    },
+    "products": {
+      "product": [
+        {
+          "productId": "74503",
+          "dateOfTravel": "2019-02-27",
+          "items": [
+            {
+              "category": "Adult ",
+              "quantity": "1",
+              "ticketType": "QR_CODE",
+              "ticketBarCode": "10158521|7|27022019|1[74503AD:1:4900:USD]f53dac4a04d19393",
+              "message": null,
+              "image": null
+            },
+            {
+              "category": "Adult ",
+              "quantity": "1",
+              "ticketType": "QR_CODE",
+              "ticketBarCode": "10158522|7|27022019|1[74503AD:1:4900:USD]c3f71a6e658982be",
+              "message": null,
+              "image": null
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

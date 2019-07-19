@@ -1,0 +1,40 @@
+{
+  "status": "SUCCESS",
+  "code": "",
+  "message": "",
+  "reservationResult": {
+    "status": "RESERVED",
+    "reservationReference": "08256ca2-19e9-4620-a4f0-ed8671fc1958",
+    "dateOfReservation": "2018-03-28",
+    "reservationFee": "5",
+    "currencyCode": "cash",
+    "notes": "custom notes",
+    "reserveUntil": "2018-04-20",
+    "leadGuest": {
+      "firstname": "amar",
+      "lastname": "naidu",
+      "email": "vimala.pradaga@gmail.com",
+      "phone": "1234567890",
+      "mobile": "1234567890"
+    },
+    "products": {
+      "product": [
+        {
+          "productId": "3GZ00202",
+          "eventId": "0000654628-0000000219",
+          "dateOfTravel": "2018-04-20",
+          "items": [
+            {
+              "category": "Adult",
+              "quantity": "1"
+            },
+            {
+              "category": "Child",
+              "quantity": "1"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

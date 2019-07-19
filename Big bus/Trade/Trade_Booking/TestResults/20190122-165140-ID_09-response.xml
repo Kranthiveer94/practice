@@ -1,0 +1,1 @@
+{   "status": "ERROR",   "code": "BB-209",   "message": "Please enter valid numeric discount amount" ,"bookingResult": {"status":"NOT_BOOKED"} }

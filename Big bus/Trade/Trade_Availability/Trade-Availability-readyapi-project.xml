@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="baedca43-a67a-4bb2-b15b-1eaaaadc25fc" created="2.5.0" activeEnvironment="Default" name="Trade-Availability" resourceRoot="" updated="2.5.0 2018-09-14T14:45:07Z" encryptionMode="Not encrypted" abortOnError="false" runType="SEQUENTIAL" soapui-version="5.4.0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:interface xsi:type="con:RestService" id="844f3524-1a58-4b35-9c59-d2aa56bc486e" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://bb-trade-api-v2-d.ir-e1.cloudhub.io" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>https://bb-trade-api-v2-d.ir-e1.cloudhub.io</con:endpoint>
+    </con:endpoints>
+    <con:resource name="Availability" path="/api/1/availability" id="2caac553-0f61-4969-b1c1-12d727123327">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Availability" id="55ceb2f6-5061-4d2c-bcb9-ac92b6f7cfac" method="GET">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter required="true">
+            <con:name>productId</con:name>
+            <con:value>14488</con:value>
+            <con:style>QUERY</con:style>
+            <con:default>14488</con:default>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+          <con:parameter required="true">
+            <con:name>fromDate</con:name>
+            <con:value>2019-06-20</con:value>
+            <con:style>QUERY</con:style>
+            <con:default>2019-06-20</con:default>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+          <con:parameter required="true">
+            <con:name>toDate</con:name>
+            <con:value>2019-08-20</con:value>
+            <con:style>QUERY</con:style>
+            <con:default>2019-08-20</con:default>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json;charset=UTF-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:ava="https://bb-trade-api-v2-d.ir-e1.cloudhub.io/api/1/availability">ava:Response</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:ava="https://bb-trade-api-v2-d.ir-e1.cloudhub.io/api/1/availability">ava:Response</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>500</con:status>
+          <con:params/>
+          <con:element xmlns:ava="https://bb-trade-api-v2-d.ir-e1.cloudhub.io/api/1/availability">ava:Fault</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="92b6cf6e-a67f-47ce-add1-ff9bd4b988bb" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Authorization" value="Basic YzMxZjJlYWQ2NDY3NDhkNjlhZTE0NDkwNDFkNjAzZmM6OTNBNDA3NkM1MUI5NDcyZjkyQjMwNTEzODAyNTdkMDU="/>
+  &lt;con:entry key="Content-Type" value="application/json"/>
+&lt;/xml-fragment></con:setting>
+          </con:settings>
+          <con:endpoint>https://bb-trade-api-d.eu.cloudhub.io</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://bb-trade-api-v2-d.ir-e1.cloudhub.io/api/1/availability</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters>
+            <con:entry key="fromDate" value="2019-12-20"/>
+            <con:entry key="productId" value="54493"/>
+            <con:entry key="toDate" value="2019-12-25"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>productId</con:entry>
+            <con:entry>fromDate</con:entry>
+            <con:entry>toDate</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:testSuite id="59734697-e724-4268-a2bb-3e18ad303625" name="TestSuite">
+    <con:description>The test suite generated for the REST service [https://bb-trade-api-v2-d.ir-e1.cloudhub.io]</con:description>
+    <con:settings/>
+    <con:savedRecentRuns>1</con:savedRecentRuns>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="078f939d-721a-49cb-824f-c4fff4a57409" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="BMO" searchProperties="true" timeout="0" maxResults="0">
+      <con:description>The test case generated for the REST resource [Availability] located at [/api/1/availability]</con:description>
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="properties" name="Properties" id="91dddea5-ca6c-4d02-971f-2854ed100c3f">
+        <con:settings/>
+        <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:properties>
+            <con:property>
+              <con:name>TestDataSheetName</con:name>
+              <con:value>BMO</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Source</con:name>
+              <con:value>${projectDir}\Availability-TestData.xls</con:value>
+            </con:property>
+            <con:property>
+              <con:name>SaveLocation</con:name>
+              <con:value>${projectDir}\TestResults\</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Filename</con:name>
+              <con:value>Availability-TestData.xls</con:value>
+            </con:property>
+          </con:properties>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasource" name="DataSource" id="d78987d1-0cf5-4804-9f18-6ef80b70333a">
+        <con:settings/>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="Excel">
+            <con:configuration>
+              <file>${projectDir}/Availability-TestData.xls</file>
+              <worksheet>BMO</worksheet>
+              <cell>A7</cell>
+              <ignoreEmpty>true</ignoreEmpty>
+              <evaluateFormulas>false</evaluateFormulas>
+            </con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          <con:property>TestCaseID</con:property>
+          <con:property>Description (optional)</con:property>
+          <con:property>productId</con:property>
+          <con:property>fromDate</con:property>
+          <con:property>toDate</con:property>
+          <con:property>Authorization</con:property>
+          <con:property>Content-Type</con:property>
+          <con:property>Result</con:property>
+          <con:property>Request</con:property>
+          <con:property>Response</con:property>
+          <con:completeLastOperation>true</con:completeLastOperation>
+          <con:restartOnRun>true</con:restartOnRun>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Request" id="89787088-1089-4666-9ae5-ef357cbd2d12">
+        <con:settings/>
+        <con:config service="https://bb-trade-api-v2-d.ir-e1.cloudhub.io" resourcePath="/api/1/availability" methodName="Availability" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Request" id="92b6cf6e-a67f-47ce-add1-ff9bd4b988bb" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Authorization" value="${#Project#auth}"/>
+  &lt;con:entry key="Content-Type" value="${DataSource#Content-Type}"/>
+&lt;/xml-fragment></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#endpoint}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://bb-trade-api-v2-d.ir-e1.cloudhub.io/api/1/availability</con:originalUri>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters>
+              <con:entry key="fromDate" value="${DataSource#fromDate}"/>
+              <con:entry key="productId" value="154565"/>
+              <con:entry key="toDate" value="${DataSource#toDate}"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>productId</con:entry>
+              <con:entry>fromDate</con:entry>
+              <con:entry>toDate</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="SaveXmls" id="35f4ece8-0f11-48e8-bb40-4d3cbbf73a4e">
+        <con:settings/>
+        <con:config>
+          <script>def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+def name = context.expand( '${Properties#Filename}' )
+def location = context.expand( '${Properties#SaveLocation}' )
+def getResponseFilename(name) {
+   count = ( testRunner.testCase.testSteps["DataSource"].currentRow )
+   date = new Date()
+   dateFormat = new java.text.SimpleDateFormat('yyyyMMdd-kkmmss')
+   shortDate = dateFormat.format(date)
+def testCaseID = context.expand( '${DataSource#TestCaseID}' )
+   respFilename = shortDate + "-" + testCaseID + "-response.xml"  // implicitely returned
+}
+
+def getRequestFilename(name) {  
+	def testCaseID = context.expand( '${DataSource#TestCaseID}' ) 
+	reqFilename = shortDate + "-" + testCaseID + "-request.xml"  // implicitely returned
+}
+	
+def file = new PrintWriter (location + getResponseFilename(name))
+def Response = testRunner.testCase.testSteps["Request"].testRequest.response.contentAsString
+file.println(Response)
+file.flush()
+file.close()
+
+def file2 = new PrintWriter (location + getRequestFilename(name))
+def Request = context.expand( '${Request#Request}' )
+file2.println(Request)
+file2.flush()
+file2.close()</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="Validate" id="c3d1fe57-567e-4706-9117-964a2cf8ccc2">
+        <con:settings/>
+        <con:config>
+          <script>def httpValue = testRunner.testCase.testSteps['Request'].testRequest.response.getResponseHeaders()
+log.info httpValue
+def status = httpValue["#status#"].toString()
+log.info status
+
+return status.contains('200') ? "PASS" : "FAIL"</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasink" name="DataSink" id="64ac2103-4078-4a78-b2f3-9864e13f31e0">
+        <con:settings/>
+        <con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSink type="Excel">
+            <con:configuration>
+              <file>${projectDir}/Availability-TestData.xls</file>
+              <outfile>${projectDir}/Availability-TestData.xls</outfile>
+              <worksheet>BMO</worksheet>
+              <cell>H7</cell>
+              <evaluateFormulas>false</evaluateFormulas>
+              <append>false</append>
+            </con:configuration>
+          </con:dataSink>
+          <con:properties>
+            <con:property>
+              <con:name>Result</con:name>
+              <con:value>${Validate#result}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Request</con:name>
+              <con:value>${Request#Request}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Response</con:name>
+              <con:value>${Request#RawResponse}</con:value>
+            </con:property>
+          </con:properties>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="Delay" id="f1996f1d-9023-4f14-838b-b5b09fa17c46">
+        <con:settings/>
+        <con:config>
+          <delay>1000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasourceloop" name="DataSource Loop" id="7c321dbc-90a5-451c-b95f-0245c0787001">
+        <con:settings/>
+        <con:config>
+          <dataSourceStep>DataSource</dataSourceStep>
+          <targetStep>Request</targetStep>
+          <discardResults>true</discardResults>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:breakPoints>
+        <con:testStepId>89787088-1089-4666-9ae5-ef357cbd2d12</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>c3d1fe57-567e-4706-9117-964a2cf8ccc2</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>f1996f1d-9023-4f14-838b-b5b09fa17c46</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+    </con:testCase>
+    <con:testCase id="2cb4a344-49c0-4bea-8504-85c92f290220" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="MM" searchProperties="true" timeout="0" maxResults="0">
+      <con:description>The test case generated for the REST resource [Availability] located at [/api/1/availability]</con:description>
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="properties" name="Properties" id="9f483b1b-8af3-47c1-a2bd-ed3b6ca49d03">
+        <con:settings/>
+        <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:properties>
+            <con:property>
+              <con:name>SaveLocation</con:name>
+              <con:value>${projectDir}\TestResults\</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Source</con:name>
+              <con:value>${projectDir}\Availability-TestData.xls</con:value>
+            </con:property>
+            <con:property>
+              <con:name>TestDataSheetName</con:name>
+              <con:value>MM</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Filename</con:name>
+              <con:value>Availability-TestData.xls</con:value>
+            </con:property>
+          </con:properties>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasource" name="DataSource" id="71e231a9-805e-4b0c-95b8-b88038969b0f">
+        <con:settings/>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="Excel">
+            <con:configuration>
+              <file>${projectDir}/Availability-TestData.xls</file>
+              <worksheet>MM</worksheet>
+              <cell>A7</cell>
+              <ignoreEmpty>true</ignoreEmpty>
+              <evaluateFormulas>false</evaluateFormulas>
+            </con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          <con:property>TestCaseID</con:property>
+          <con:property>Description (optional)</con:property>
+          <con:property>productId</con:property>
+          <con:property>fromDate</con:property>
+          <con:property>toDate</con:property>
+          <con:property>Authorization</con:property>
+          <con:property>Content-Type</con:property>
+          <con:property>Result</con:property>
+          <con:property>Request</con:property>
+          <con:property>Response</con:property>
+          <con:completeLastOperation>true</con:completeLastOperation>
+          <con:restartOnRun>true</con:restartOnRun>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Request" id="2c05961d-e491-404e-970b-835abfec3215">
+        <con:settings/>
+        <con:config service="https://bb-trade-api-v2-d.ir-e1.cloudhub.io" resourcePath="/api/1/availability" methodName="Availability" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Request" id="92b6cf6e-a67f-47ce-add1-ff9bd4b988bb" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Authorization" value="${#Project#auth}"/>
+  &lt;con:entry key="Content-Type" value="${DataSource#Content-Type}"/>
+&lt;/xml-fragment></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#endpoint}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://bb-trade-api-v2-d.ir-e1.cloudhub.io/api/1/availability</con:originalUri>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="fromDate" value="${DataSource#fromDate}"/>
+              <con:entry key="productId" value="${DataSource#productId}"/>
+              <con:entry key="toDate" value="${DataSource#toDate}"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>productId</con:entry>
+              <con:entry>fromDate</con:entry>
+              <con:entry>toDate</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="SaveXmls" id="07385f0c-3e71-49bc-91ef-661ac15abbef">
+        <con:settings/>
+        <con:config>
+          <script>def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+def name = context.expand( '${Properties#Filename}' )
+def location = context.expand( '${Properties#SaveLocation}' )
+def getResponseFilename(name) {
+   count = ( testRunner.testCase.testSteps["DataSource"].currentRow )
+   date = new Date()
+   dateFormat = new java.text.SimpleDateFormat('yyyyMMdd-kkmmss')
+   shortDate = dateFormat.format(date)
+def testCaseID = context.expand( '${DataSource#TestCaseID}' )
+   respFilename = shortDate + "-" + testCaseID + "-response.xml"  // implicitely returned
+}
+
+def getRequestFilename(name) {  
+	def testCaseID = context.expand( '${DataSource#TestCaseID}' ) 
+	reqFilename = shortDate + "-" + testCaseID + "-request.xml"  // implicitely returned
+}
+	
+def file = new PrintWriter (location + getResponseFilename(name))
+def Response = testRunner.testCase.testSteps["Request"].testRequest.response.contentAsString
+file.println(Response)
+file.flush()
+file.close()
+
+def file2 = new PrintWriter (location + getRequestFilename(name))
+def Request = context.expand( '${Request#Request}' )
+file2.println(Request)
+file2.flush()
+file2.close()</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="Validate" id="ee1b3542-5c9b-43d3-b109-6da83488453b">
+        <con:settings/>
+        <con:config>
+          <script>def httpValue = testRunner.testCase.testSteps['Request'].testRequest.response.getResponseHeaders()
+log.info httpValue
+def status = httpValue["#status#"].toString()
+log.info status
+
+return status.contains('200') ? "PASS" : "FAIL"</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasink" name="DataSink" id="1993ac4e-37ac-4a9e-9230-f37cf2e39ee6">
+        <con:settings/>
+        <con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSink type="Excel">
+            <con:configuration>
+              <file>${projectDir}/Availability-TestData.xls</file>
+              <outfile>${projectDir}/Availability-TestData.xls</outfile>
+              <worksheet>MM</worksheet>
+              <cell>H7</cell>
+              <evaluateFormulas>false</evaluateFormulas>
+              <append>false</append>
+            </con:configuration>
+          </con:dataSink>
+          <con:properties>
+            <con:property>
+              <con:name>Result</con:name>
+              <con:value>${Validate#result}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Request</con:name>
+              <con:value>${Request#Request}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Response</con:name>
+              <con:value>${Request#RawResponse}</con:value>
+            </con:property>
+          </con:properties>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="Delay" id="14a7243a-ee8a-465c-b63b-4cfbeb7562e8">
+        <con:settings/>
+        <con:config>
+          <delay>1000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasourceloop" name="DataSource Loop" id="c17f9d08-123b-4029-999f-9d97a657ef63">
+        <con:settings/>
+        <con:config>
+          <dataSourceStep>DataSource</dataSourceStep>
+          <targetStep>Request</targetStep>
+          <discardResults>true</discardResults>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:breakPoints>
+        <con:testStepId>89787088-1089-4666-9ae5-ef357cbd2d12</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>c3d1fe57-567e-4706-9117-964a2cf8ccc2</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>f1996f1d-9023-4f14-838b-b5b09fa17c46</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+    </con:testCase>
+    <con:testCase id="68f03611-0669-417e-b4b8-fc97650fdadb" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="ID" searchProperties="true" timeout="0" maxResults="0">
+      <con:description>The test case generated for the REST resource [Availability] located at [/api/1/availability]</con:description>
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="properties" name="Properties" id="59d6e73b-f16a-48bf-9933-ad78b1fa78fb">
+        <con:settings/>
+        <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:properties>
+            <con:property>
+              <con:name>SaveLocation</con:name>
+              <con:value>${projectDir}\TestResults\</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Source</con:name>
+              <con:value>${projectDir}\Availability-TestData.xls</con:value>
+            </con:property>
+            <con:property>
+              <con:name>TestDataSheetName</con:name>
+              <con:value>ID</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Filename</con:name>
+              <con:value>Availability-TestData.xls</con:value>
+            </con:property>
+          </con:properties>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasource" name="DataSource" id="d649f88f-576d-4e7c-82ee-e71dadcff305">
+        <con:settings/>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="Excel">
+            <con:configuration>
+              <file>${projectDir}/Availability-TestData.xls</file>
+              <worksheet>ID</worksheet>
+              <cell>A7</cell>
+              <ignoreEmpty>true</ignoreEmpty>
+              <evaluateFormulas>false</evaluateFormulas>
+            </con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          <con:property>TestCaseID</con:property>
+          <con:property>Description (optional)</con:property>
+          <con:property>productId</con:property>
+          <con:property>fromDate</con:property>
+          <con:property>toDate</con:property>
+          <con:property>Authorization</con:property>
+          <con:property>Content-Type</con:property>
+          <con:property>Result</con:property>
+          <con:property>Request</con:property>
+          <con:property>Response</con:property>
+          <con:completeLastOperation>true</con:completeLastOperation>
+          <con:restartOnRun>true</con:restartOnRun>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Request" id="6c4f11bb-0858-4cc9-9a36-d6333f980832">
+        <con:settings/>
+        <con:config service="https://bb-trade-api-v2-d.ir-e1.cloudhub.io" resourcePath="/api/1/availability" methodName="Availability" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Request" id="92b6cf6e-a67f-47ce-add1-ff9bd4b988bb" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Authorization" value="${#Project#auth}"/>
+  &lt;con:entry key="Content-Type" value="${DataSource#Content-Type}"/>
+&lt;/xml-fragment></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#endpoint}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://bb-trade-api-v2-d.ir-e1.cloudhub.io/api/1/availability</con:originalUri>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="fromDate" value="${DataSource#fromDate}"/>
+              <con:entry key="productId" value="${DataSource#productId}"/>
+              <con:entry key="toDate" value="${DataSource#toDate}"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>productId</con:entry>
+              <con:entry>fromDate</con:entry>
+              <con:entry>toDate</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="SaveXmls" id="17c9e52e-7880-4606-914f-2814c8ea5bf3">
+        <con:settings/>
+        <con:config>
+          <script>def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+def name = context.expand( '${Properties#Filename}' )
+def location = context.expand( '${Properties#SaveLocation}' )
+def getResponseFilename(name) {
+   count = ( testRunner.testCase.testSteps["DataSource"].currentRow )
+   date = new Date()
+   dateFormat = new java.text.SimpleDateFormat('yyyyMMdd-kkmmss')
+   shortDate = dateFormat.format(date)
+def testCaseID = context.expand( '${DataSource#TestCaseID}' )
+   respFilename = shortDate + "-" + testCaseID + "-response.xml"  // implicitely returned
+}
+
+def getRequestFilename(name) {  
+	def testCaseID = context.expand( '${DataSource#TestCaseID}' ) 
+	reqFilename = shortDate + "-" + testCaseID + "-request.xml"  // implicitely returned
+}
+	
+def file = new PrintWriter (location + getResponseFilename(name))
+def Response = testRunner.testCase.testSteps["Request"].testRequest.response.contentAsString
+file.println(Response)
+file.flush()
+file.close()
+
+def file2 = new PrintWriter (location + getRequestFilename(name))
+def Request = context.expand( '${Request#Request}' )
+file2.println(Request)
+file2.flush()
+file2.close()</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="Validate" id="ac228ceb-3e34-4b06-b0e7-e809b34dd01a">
+        <con:settings/>
+        <con:config>
+          <script>def httpValue = testRunner.testCase.testSteps['Request'].testRequest.response.getResponseHeaders()
+log.info httpValue
+def status = httpValue["#status#"].toString()
+log.info status
+
+return status.contains('200') ? "PASS" : "FAIL"</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasink" name="DataSink" id="8ed76a93-9967-411b-bea1-92805006fb9a">
+        <con:settings/>
+        <con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSink type="Excel">
+            <con:configuration>
+              <file>${projectDir}/Availability-TestData.xls</file>
+              <outfile>${projectDir}/Availability-TestData.xls</outfile>
+              <worksheet>ID</worksheet>
+              <cell>H7</cell>
+              <evaluateFormulas>false</evaluateFormulas>
+              <append>false</append>
+            </con:configuration>
+          </con:dataSink>
+          <con:properties>
+            <con:property>
+              <con:name>Result</con:name>
+              <con:value>${Validate#result}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Request</con:name>
+              <con:value>${Request#Request}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Response</con:name>
+              <con:value>${Request#RawResponse}</con:value>
+            </con:property>
+          </con:properties>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="Delay" id="f77b3592-47ca-4146-b6e9-fcdbbb69cf09">
+        <con:settings/>
+        <con:config>
+          <delay>1000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasourceloop" name="DataSource Loop" id="487a6d1e-9188-4e15-a392-b80146aad1f5">
+        <con:settings/>
+        <con:config>
+          <dataSourceStep>DataSource</dataSourceStep>
+          <targetStep>Request</targetStep>
+          <discardResults>true</discardResults>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:breakPoints>
+        <con:testStepId>89787088-1089-4666-9ae5-ef357cbd2d12</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>c3d1fe57-567e-4706-9117-964a2cf8ccc2</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>f1996f1d-9023-4f14-838b-b5b09fa17c46</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+    </con:testCase>
+    <con:testCase id="84489c29-de7f-4d77-97f1-367c1a527a3f" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Headers" searchProperties="true" timeout="0" maxResults="0">
+      <con:description>The test case generated for the REST resource [Availability] located at [/api/1/availability]</con:description>
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="properties" name="Properties" id="df27dfc8-85b5-4860-b072-7841cd24561e">
+        <con:settings/>
+        <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:properties>
+            <con:property>
+              <con:name>SaveLocation</con:name>
+              <con:value>${projectDir}\TestResults\</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Source</con:name>
+              <con:value>${projectDir}\Availability-TestData.xls</con:value>
+            </con:property>
+            <con:property>
+              <con:name>TestDataSheetName</con:name>
+              <con:value>Headers</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Filename</con:name>
+              <con:value>Availability-TestData.xls</con:value>
+            </con:property>
+          </con:properties>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasource" name="DataSource" id="af2de800-bd6b-4d31-98cf-f045bd7588da">
+        <con:settings/>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="Excel">
+            <con:configuration>
+              <file>${projectDir}/Availability-TestData.xls</file>
+              <worksheet>Headers</worksheet>
+              <cell>A7</cell>
+              <ignoreEmpty>true</ignoreEmpty>
+              <evaluateFormulas>false</evaluateFormulas>
+            </con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          <con:property>TestCaseID</con:property>
+          <con:property>Description (optional)</con:property>
+          <con:property>productId</con:property>
+          <con:property>fromDate</con:property>
+          <con:property>toDate</con:property>
+          <con:property>Authorization</con:property>
+          <con:property>Content-Type</con:property>
+          <con:property>Result</con:property>
+          <con:property>Request</con:property>
+          <con:property>Response</con:property>
+          <con:completeLastOperation>true</con:completeLastOperation>
+          <con:restartOnRun>true</con:restartOnRun>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Request" id="970515f5-cdfe-49fa-9eeb-e38da5b1fa6f">
+        <con:settings/>
+        <con:config service="https://bb-trade-api-v2-d.ir-e1.cloudhub.io" resourcePath="/api/1/availability" methodName="Availability" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Request" id="92b6cf6e-a67f-47ce-add1-ff9bd4b988bb" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Authorization" value="${#Project#auth}"/>
+  &lt;con:entry key="Content-Type" value="${DataSource#Content-Type}"/>
+&lt;/xml-fragment></con:setting>
+            </con:settings>
+            <con:endpoint>${#Project#endpoint}</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://bb-trade-api-v2-d.ir-e1.cloudhub.io/api/1/availability</con:originalUri>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="fromDate" value="${DataSource#fromDate}"/>
+              <con:entry key="productId" value="${DataSource#productId}"/>
+              <con:entry key="toDate" value="${DataSource#toDate}"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>productId</con:entry>
+              <con:entry>fromDate</con:entry>
+              <con:entry>toDate</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="SaveXmls" id="4c512a03-8131-4db5-a388-c67e48fdfd68">
+        <con:settings/>
+        <con:config>
+          <script>def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+def name = context.expand( '${Properties#Filename}' )
+def location = context.expand( '${Properties#SaveLocation}' )
+def getResponseFilename(name) {
+   count = ( testRunner.testCase.testSteps["DataSource"].currentRow )
+   date = new Date()
+   dateFormat = new java.text.SimpleDateFormat('yyyyMMdd-kkmmss')
+   shortDate = dateFormat.format(date)
+def testCaseID = context.expand( '${DataSource#TestCaseID}' )
+   respFilename = shortDate + "-" + testCaseID + "-response.xml"  // implicitely returned
+}
+
+def getRequestFilename(name) {  
+	def testCaseID = context.expand( '${DataSource#TestCaseID}' ) 
+	reqFilename = shortDate + "-" + testCaseID + "-request.xml"  // implicitely returned
+}
+	
+def file = new PrintWriter (location + getResponseFilename(name))
+def Response = testRunner.testCase.testSteps["Request"].testRequest.response.contentAsString
+file.println(Response)
+file.flush()
+file.close()
+
+def file2 = new PrintWriter (location + getRequestFilename(name))
+def Request = context.expand( '${Request#Request}' )
+file2.println(Request)
+file2.flush()
+file2.close()</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="Validate" id="f05c81f8-23ae-41c7-a41f-6f39e8014b42">
+        <con:settings/>
+        <con:config>
+          <script>def httpValue = testRunner.testCase.testSteps['Request'].testRequest.response.getResponseHeaders()
+log.info httpValue
+def status = httpValue["#status#"].toString()
+log.info status
+
+return status.contains('200') ? "PASS" : "FAIL"</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasink" name="DataSink" id="338d7219-a67a-4974-9b90-9fa25ab96587">
+        <con:settings/>
+        <con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSink type="Excel">
+            <con:configuration>
+              <file>${projectDir}/Availability-TestData.xls</file>
+              <outfile>${projectDir}/Availability-TestData.xls</outfile>
+              <worksheet>Headers</worksheet>
+              <cell>H7</cell>
+              <evaluateFormulas>false</evaluateFormulas>
+              <append>false</append>
+            </con:configuration>
+          </con:dataSink>
+          <con:properties>
+            <con:property>
+              <con:name>Result</con:name>
+              <con:value>${Validate#result}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Request</con:name>
+              <con:value>${Request#Request}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Response</con:name>
+              <con:value>${Request#RawResponse}</con:value>
+            </con:property>
+          </con:properties>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="Delay" id="a1f6f15b-b93f-406b-9e00-81e262b665a7">
+        <con:settings/>
+        <con:config>
+          <delay>1000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasourceloop" name="DataSource Loop" id="ed89ffac-1c61-4d0f-8ed4-394c72a47f75">
+        <con:settings/>
+        <con:config>
+          <dataSourceStep>DataSource</dataSourceStep>
+          <targetStep>Request</targetStep>
+          <discardResults>true</discardResults>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:breakPoints>
+        <con:testStepId>89787088-1089-4666-9ae5-ef357cbd2d12</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>c3d1fe57-567e-4706-9117-964a2cf8ccc2</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>f1996f1d-9023-4f14-838b-b5b09fa17c46</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:requirements/>
+  <con:properties>
+    <con:property>
+      <con:name>endpoint</con:name>
+      <con:value>https://bb-trade-api-d.eu.cloudhub.io</con:value>
+    </con:property>
+    <con:property>
+      <con:name>auth</con:name>
+      <con:value>Basic YzMxZjJlYWQ2NDY3NDhkNjlhZTE0NDkwNDFkNjAzZmM6OTNBNDA3NkM1MUI5NDcyZjkyQjMwNTEzODAyNTdkMDU=</con:value>
+    </con:property>
+  </con:properties>
+  <con:wssContainer/>
+  <con:databaseConnectionContainer/>
+  <con:jmsConnectionContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:reporting>
+    <con:xmlTemplates/>
+    <con:parameters/>
+  </con:reporting>
+  <con:eventHandlers type="RequestFilter.filterRequest" name="RequestFilter.filterRequest">
+    <con:script>// Sample event script to add custom HTTP header to all outgoing REST, SOAP and HTTP(S) calls
+// This code is often used for adding custom authentication to SoapUI Pro tests
+
+// If hardcoding the token, uncomment and change line 5
+// def token = '4567'
+
+// If your token is parameterized in Project level custom property, uncomment line 8
+// def token = request.parent.testCase.testSuite.project.getProperty('auth_token').getValue()
+
+// To modify all outgoing calls, remove comments from lines 11 to 16
+// def headers = request.requestHeaders
+// if (headers.containsKey('auth_token2') == false) {
+//   headers.put('auth_token2', token)
+//   request.requestHeaders = headers
+// }</con:script>
+  </con:eventHandlers>
+  <con:eventHandlers type="TestRunListener.afterStep" name="TestRunListener.afterStep">
+    <con:script>// Save all test step results into files
+// Change the directory path in line 5 to a location where you want to store details
+// then uncomment lines 5 to 10
+
+// filePath = 'C:\\tempOutputDirectory\\'
+// fos = new FileOutputStream(filePath + testStepResult.testStep.label + '.txt', true)
+// pw = new PrintWriter(fos)
+// testStepResult.writeTo(pw)
+// pw.close()
+// fos.close()</con:script>
+  </con:eventHandlers>
+  <con:authRepository/>
+  <con:tags/>
+</con:soapui-project>

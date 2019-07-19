@@ -1,0 +1,10 @@
+{
+  "requestType":"TourListRequest",
+  "data":{
+    "ApiKey":"6asdfrfef",
+    "ResellerId":"1000",
+    "SupplierId":"1004",
+    "ExternalReference":"10051374722994000",
+    "Timestamp":"2018-03-30 00:00:00"
+    }
+  }

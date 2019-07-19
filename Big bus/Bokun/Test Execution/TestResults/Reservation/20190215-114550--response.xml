@@ -1,0 +1,1 @@
+{ "status": "ERROR",  "code": "BB-205",   "message": "Please enter valid date format(yyyy-MM-dd)","reservationResult": {"status":"NOT_RESERVED"} }

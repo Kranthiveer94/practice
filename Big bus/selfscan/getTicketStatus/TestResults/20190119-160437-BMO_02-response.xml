@@ -1,0 +1,62 @@
+[
+  {
+    "status": "SUCCESS",
+    "code": "200",
+    "ticketId": "BBY209Z8L2D",
+    "state": "LIVE",
+    "validFrom": "1546592479.226",
+    "validTill": "1562227579.225",
+    "usageFrom": "",
+    "usageTill": ""
+  },
+  {
+    "status": "SUCCESS",
+    "code": "200",
+    "ticketId": "BBM2V9QRR6N",
+    "state": "LIVE",
+    "validFrom": "1546592479.233",
+    "validTill": "1562227579.232",
+    "usageFrom": "",
+    "usageTill": ""
+  },
+  {
+    "status": "SUCCESS",
+    "code": "200",
+    "ticketId": "BBR68NZEN58",
+    "state": "LIVE",
+    "validFrom": "1546592479.239",
+    "validTill": "1562227579.238",
+    "usageFrom": "",
+    "usageTill": ""
+  },
+  {
+    "status": "SUCCESS",
+    "code": "200",
+    "ticketId": "BBD29EMZ12Q",
+    "state": "LIVE",
+    "validFrom": "1546592479.246",
+    "validTill": "1562227579.245",
+    "usageFrom": "",
+    "usageTill": ""
+  },
+  {
+    "status": "SUCCESS",
+    "code": "200",
+    "ticketId": "BBV6QZKRW6X",
+    "state": "LIVE",
+    "validFrom": "1546592479.253",
+    "validTill": "1562227579.252",
+    "usageFrom": "",
+    "usageTill": ""
+  },
+  {
+    "status": "SUCCESS",
+    "code": "200",
+    "ticketId": "BBK2OPXW76J",
+    "state": "LIVE",
+    "validFrom": "1546592479.260",
+    "validTill": "1562227579.259",
+    "usageFrom": "",
+    "usageTill": ""
+  }
+]

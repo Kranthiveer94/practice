@@ -1,0 +1,6 @@
+{
+  "cancelBookingRequest": {
+    "bookingReference": "d059a289-da51-4ef0-98d7-9fb9c1e4742b",
+    "subAgentReference": "Bokun-subAgentCode"
+  }
+}

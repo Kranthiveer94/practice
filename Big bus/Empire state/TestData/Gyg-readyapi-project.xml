@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="a23031a8-fc93-447a-b8df-8f5a5e2bf93d" created="2.5.0" activeEnvironment="Default" name="Gyg" resourceRoot="" updated="2.5.0 2018-09-14T14:45:07Z" abortOnError="false" runType="SEQUENTIAL" soapui-version="5.4.0" encryptionMode="Not encrypted" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:interface xsi:type="con:RestService" id="ffff8c20-b91b-4600-b87c-caf9d8bf65a8" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://bb-gyg-api-d.eu.cloudhub.io" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>https://bb-gyg-api-d.eu.cloudhub.io</con:endpoint>
+    </con:endpoints>
+    <con:resource name="Get-availabilities" path="/api/1/get-availabilities" id="6f61f564-6dcd-4769-bc3f-203daf17b8a4">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Get-availabilities" id="51056d0c-5a9a-453b-a2c0-d3f1d85a71d5" method="GET">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter required="true">
+            <con:name>productId</con:name>
+            <con:value>14488</con:value>
+            <con:style>QUERY</con:style>
+            <con:default>14488</con:default>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+          <con:parameter required="true">
+            <con:name>fromDateTime</con:name>
+            <con:value>2019-04-04</con:value>
+            <con:style>QUERY</con:style>
+            <con:default>2019-04-04</con:default>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+          <con:parameter required="true">
+            <con:name>toDateTime</con:name>
+            <con:value>2019-04-05</con:value>
+            <con:style>QUERY</con:style>
+            <con:default>2019-04-05</con:default>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:get="https://bb-gyg-api-d.eu.cloudhub.io/api/1/get-availabilities">get:Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="98f242f1-66ed-4d12-92a6-cff26156b7f3" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Basic YzMxZjJlYWQ2NDY3NDhkNjlhZTE0NDkwNDFkNjAzZmM6OTNBNDA3NkM1MUI5NDcyZjkyQjMwNTEzODAyNTdkMDU=" xmlns="http://eviware.com/soapui/config"/></con:setting>
+          </con:settings>
+          <con:endpoint>https://bb-gyg-api-d.eu.cloudhub.io</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://bb-gyg-api-d.eu.cloudhub.io/api/1/get-availabilities</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters>
+            <con:entry key="productId" value="14489"/>
+            <con:entry key="fromDateTime" value="2019-04-04"/>
+            <con:entry key="toDateTime" value="2019-04-05"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>productId</con:entry>
+            <con:entry>fromDateTime</con:entry>
+            <con:entry>toDateTime</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="bc11302e-9c30-4f96-802b-1098b8a3799f" wadlVersion="http://wadl.dev.java.net/2009/02" name="REST Service 1" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints/>
+    <con:resource name="/api/1/reservation" path="/api/1/reserve" id="0880df1e-0074-4960-a96a-b540b14ba9a1">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="POST" id="8fb6f8d8-9e8c-436e-8902-4b4c0577688a" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:res="https://bb-gyg-api-d.eu.cloudhub.io/api/1/reservation">res:Response</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json;charset=UTF-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:res="https://bb-gyg-api-d.eu.cloudhub.io/api/1/reservations">res:Response</con:element>
+        </con:representation>
+        <con:request name="POST Request" id="d02ccec4-c172-4d2b-b29b-1977757b318b" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Basic YzMxZjJlYWQ2NDY3NDhkNjlhZTE0NDkwNDFkNjAzZmM6OTNBNDA3NkM1MUI5NDcyZjkyQjMwNTEzODAyNTdkMDU=" xmlns="http://eviware.com/soapui/config"/></con:setting>
+          </con:settings>
+          <con:endpoint>https://bb-gyg-api-d.eu.cloudhub.io</con:endpoint>
+          <con:request>{
+  "data": {
+    "productId": "14489",
+    "dateTime": "2019-12-01T10:00:00+02:00",
+    "bookingItems": [
+      {
+        "category": "ADULT",
+        "count": 2
+      },
+      {
+        "category": "CHILD",
+        "count": 1
+      }
+    ]
+  }
+}</con:request>
+          <con:originalUri>https://bb-gyg-api-d.eu.cloudhub.io/api/1/reservations</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="8c714fcb-36dd-472e-bba7-9c1b1999d134" wadlVersion="http://wadl.dev.java.net/2009/02" name="REST Service 2" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints/>
+    <con:resource name="/api/1/book" path="/api/1/book" id="8f9f627c-5109-4987-948c-69e2d4c8e090">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="GET" id="ecec93f7-0744-45e5-ac41-62de00f135bf" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:book="https://bb-gyg-api-t.eu.cloudhub.io/api/1/book">book:Response</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json;charset=UTF-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:book="https://bb-gyg-api-t.eu.cloudhub.io/api/1/book">book:Response</con:element>
+        </con:representation>
+        <con:request name="GET Request" id="4d1c80c2-31c3-4d55-9cf9-37db938ca705" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Basic YTBhNDdkZDY5OWFmNDc3MmE2ODVmZDlhYmQ4NmY0YmM6MjQ5NTlDNjRERDc3NDhkODgxZjY1ZDc1ODVkZWM3NDU=" xmlns="http://eviware.com/soapui/config"/></con:setting>
+          </con:settings>
+          <con:endpoint>https://bb-gyg-api-t.eu.cloudhub.io</con:endpoint>
+          <con:request>{
+  "data": {
+    "productId": "14489",
+    "reservationReference": "904fc484-2fb9-4fe5-8940-33a86bbe74aa",
+    "gygBookingReference": "GYG01234567",
+    "dateTime": "2019-12-01T10:00:00+02:00",
+    "bookingItems": [
+      {
+        "category": "ADULT",
+        "count": 2
+      },
+      {
+        "category": "CHILD",
+        "count": 1
+      }
+    ],
+    "language": "en",
+    "travelers": [
+      {
+        "firstName": "John",
+        "lastName": "Smith",
+        "email": "john@john-smith.com",
+        "phoneNumber": "+49 030 1231231"
+      }
+    ],
+    "travelerHotel": "Fawlty Towers",
+    "comment": "Require wheelchair assistance."
+  }
+}</con:request>
+          <con:originalUri>https://bb-gyg-api-t.eu.cloudhub.io/api/1/book</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:testSuite id="1200ef90-6180-4836-9ea7-39d023be63fe" name="https://bb-gyg-api-d.eu.cloudhub.io TestSuite">
+    <con:settings/>
+    <con:savedRecentRuns>1</con:savedRecentRuns>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="53e69e47-7103-445c-af88-b4da44f9f889" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="https://bb-gyg-api-d.eu.cloudhub.io TestCase 1" searchProperties="true" timeout="0" maxResults="0">
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="restrequest" name="Request 1" id="eb4ea121-964e-4f87-aa2a-dc44bf295b9c">
+        <con:settings/>
+        <con:config service="https://bb-gyg-api-d.eu.cloudhub.io" resourcePath="/api/1/get-availabilities" methodName="Get-availabilities" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Request 1" id="98f242f1-66ed-4d12-92a6-cff26156b7f3" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Basic YzMxZjJlYWQ2NDY3NDhkNjlhZTE0NDkwNDFkNjAzZmM6OTNBNDA3NkM1MUI5NDcyZjkyQjMwNTEzODAyNTdkMDU=" xmlns="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>https://bb-gyg-api-d.eu.cloudhub.io</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://bb-gyg-api-d.eu.cloudhub.io/api/1/get-availabilities</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="bc2f6a76-67a8-4ac4-b0ed-8789ea216bcc" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="productId" value="14488"/>
+              <con:entry key="toDateTime" value="2019-04-05"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>productId</con:entry>
+              <con:entry>fromDateTime</con:entry>
+              <con:entry>toDateTime</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Reservation_Request" id="129c79b6-4a70-4c6a-9aea-8dc219697f47">
+        <con:settings/>
+        <con:config service="REST Service 1" resourcePath="/api/1/reserve" methodName="POST" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Reservation_Request" id="d02ccec4-c172-4d2b-b29b-1977757b318b" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Basic YzMxZjJlYWQ2NDY3NDhkNjlhZTE0NDkwNDFkNjAzZmM6OTNBNDA3NkM1MUI5NDcyZjkyQjMwNTEzODAyNTdkMDU=" xmlns="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>https://bb-gyg-api-d.eu.cloudhub.io</con:endpoint>
+            <con:request>{
+  "data": {
+    "productId": "14488",
+    "dateTime": "2019-12-01T10:00:00+02:00",
+    "bookingItems": [
+      {
+        "category": "ADULT",
+        "count": 2
+      },
+      {
+        "category": "CHILD",
+        "count": 1
+      }
+    ]
+  }
+}</con:request>
+            <con:originalUri>https://bb-gyg-api-d.eu.cloudhub.io/api/1/reservation</con:originalUri>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Booking Request" id="5f2fe8f6-c1cd-4dff-8f16-8f50f0ec01aa">
+        <con:settings/>
+        <con:config service="REST Service 2" resourcePath="/api/1/book" methodName="GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Booking Request" id="4d1c80c2-31c3-4d55-9cf9-37db938ca705" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://bb-gyg-api-d.eu.cloudhub.io</con:endpoint>
+            <con:request/>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:properties/>
+  <con:wssContainer/>
+  <con:databaseConnectionContainer/>
+  <con:jmsConnectionContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:reporting>
+    <con:xmlTemplates/>
+    <con:parameters/>
+  </con:reporting>
+  <con:eventHandlers type="RequestFilter.filterRequest" name="RequestFilter.filterRequest">
+    <con:script>// Sample event script to add custom HTTP header to all outgoing REST, SOAP and HTTP(S) calls
+// This code is often used for adding custom authentication to SoapUI Pro tests
+
+// If hardcoding the token, uncomment and change line 5
+// def token = '4567'
+
+// If your token is parameterized in Project level custom property, uncomment line 8
+// def token = request.parent.testCase.testSuite.project.getProperty('auth_token').getValue()
+
+// To modify all outgoing calls, remove comments from lines 11 to 16
+// def headers = request.requestHeaders
+// if (headers.containsKey('auth_token2') == false) {
+//   headers.put('auth_token2', token)
+//   request.requestHeaders = headers
+// }</con:script>
+  </con:eventHandlers>
+  <con:eventHandlers type="TestRunListener.afterStep" name="TestRunListener.afterStep">
+    <con:script>// Save all test step results into files
+// Change the directory path in line 5 to a location where you want to store details
+// then uncomment lines 5 to 10
+
+// filePath = 'C:\\tempOutputDirectory\\'
+// fos = new FileOutputStream(filePath + testStepResult.testStep.label + '.txt', true)
+// pw = new PrintWriter(fos)
+// testStepResult.writeTo(pw)
+// pw.close()
+// fos.close()</con:script>
+  </con:eventHandlers>
+  <con:authRepository/>
+  <con:tags/>
+</con:soapui-project>

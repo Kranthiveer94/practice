@@ -1,0 +1,40 @@
+{
+  "bookingRequest": {
+    "bookingFee": "5",
+    "currencyCode": "USD",
+    "subAgentReference": "Bokun-subAgentCode",
+    "agentBookingReference": "agentBookingReference123",
+    
+    "paymentMethod": "cash",
+    "notes": "agentBookingReference123",
+    "ticketPerPassenger": "1",
+    "underName": {
+      "firstname": "vimala",
+      "lastname": "pradaga",
+      "email": "vimala.pradaga@gmail.com",
+      "phone": "8099566093",
+      "mobile": "8099566093"
+    },
+    "paid": "1",
+    "products": {
+      "product": [
+        {
+          "productId": "74503",
+          "dateOfTravel": "Saturday, February 02, 2019",
+          "preferences": "Window seat",
+          "discountAmount": "4",
+          "discountCode": "discountCode 123",
+          "promoCode": "discountCode 123",
+          "currencyCode": "",
+          "price": "100",
+          "items": [
+                       {
+              "category": "Adult",
+              "quantity": "2"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

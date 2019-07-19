@@ -1,0 +1,35 @@
+{
+  "reservationRequest": {
+    "reservationFee": "5",
+    "currencyCode": "USD",
+    "paymentMethod": "cash",
+    "notes": "custom notes",
+    "reserveUntil": "2019-05-26",
+    "leadGuest": {
+      "firstname": "Test",
+      "lastname": "Test",
+      "email": "abc@test.com",
+      "phone": "1234567890",
+      "mobile": "1234567890"
+    },
+    "products": {
+      "product": [
+        {
+          "productId": "10809",
+          "dateOfTravel": "2019-04-20",
+          "items": [
+            {
+              "category": "Adult",
+              "quantity": "2"
+            },
+            {
+              "category": "Child",
+              "quantity": "1"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
+

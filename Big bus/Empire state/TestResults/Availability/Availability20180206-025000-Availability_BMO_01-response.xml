@@ -1,0 +1,31 @@
+{
+  "availabilityResult": {
+    "availabilityCheckResult": {
+      "status": "SUCCESS",
+      "data": {
+        "productCode": "3GZ00201",
+        "events": [
+          {
+            "id": "0000654574-0000000219",
+            "available": 100,
+            "startDateTime": "2018-02-25T09:00:00",
+            "endDateTime": "2018-02-25T19:00:00",
+            "status": "Available"
+          },
+          {
+            "id": "0000654575-0000000219",
+            "available": 100,
+            "startDateTime": "2018-02-26T09:00:00",
+            "endDateTime": "2018-02-26T19:00:00",
+            "status": "Available"
+          }
+        ]
+      },
+      "errorCode": "",
+      "errorMessage": ""
+    }
+  },
+  "noServiceDates": [
+    
+  ]
+}

@@ -1,0 +1,55 @@
+{
+	"requestType": "BookingRequest",
+	"data": {
+		"ApiKey": "6p+AIYvssp_=QZaFAELfvU-9qAD@xZbo*Vvj5?PbT_R",
+		"ResellerId": "1000",
+		"SupplierId": "1004",
+		"ExternalReference": "",
+		"Timestamp": "2018-03-03 00:00:00",
+		"BookingReference": "53c98d2e-fd72-4091-885e-cb30431f861a",
+		"TravelDate": "2018-03-03",
+		"SupplierProductCode": "14488",
+		"Location": "",
+		"TourOptions": {
+			"Language": {
+				"LanguageCode": "",
+				"LanguageOption": [""]
+			},
+			"SupplierOptionCode": "",
+			"TourDepartureTime": "",
+			"Option": [{
+				"Name": "",
+				"Value": ""
+			}]
+		},
+		"Inclusions": {
+			"Inclusion":[ ""]
+		},
+		"CurrencyCode": "",
+		"Amount": 100,
+	"Traveller": [{
+		"TravellerIdentifier": "1",
+		"TravellerTitle": "mrs",
+		"GivenName": "Vimala",
+		"Surname": "Pradaga",
+		"AgeBand": "ADULT",
+		"LeadTraveller": true
+	}],
+	"TravellerMix": {
+		"Adult": "1",
+		"Child": "1",
+		"Youth": "0",
+		"Infant": "0",
+		"Senior": "0",
+		"Total": "2"
+	},
+	"SpecialRequirement": "",
+	"PickupPoint": "",
+	"ContactDetail": {
+		"ContactType": "",
+		"ContactName": "",
+		"ContactValue": ""
+	},
+	"AvailabiltyHoldReference": ""
+}
+}

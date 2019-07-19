@@ -1,0 +1,1 @@
+{"status":"ERROR", "code":"400", "message":"reservationReference is invalid" , "bookingResult": {"status":"NOT_BOOKED"} }

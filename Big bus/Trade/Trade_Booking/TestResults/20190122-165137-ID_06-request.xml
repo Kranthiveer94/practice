@@ -1,0 +1,40 @@
+{
+  "bookingRequest": {
+    "agentBookingReference": "BB-Tours-Website",
+    "reservationReference": "",
+    "userReference": "Chameleon-211278",
+    "notes": "custom notes",
+    "ticketPerPassenger": "1",
+    "underName": {
+      "firstname": "Test",
+      "lastname": "Test",
+      "email": "abc@test.com",
+      "phone": "1234567890",
+      "mobile": "1234567890"
+    },
+    "products": {
+      "product": [
+        {
+          "productId": "abc",
+          "dateOfTravel": "2019-02-20",
+          "preferences": "Window seat",
+          "discountAmount": "4",
+          "discountCode": "discountCode 123",
+          "promoCode": "",
+          "items": [
+            {
+              "category": "Adult",
+              "quantity": "2",
+			  "price": "100"
+            },
+            {
+              "category": "Child",
+              "quantity": "1",
+			  "price": "100"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

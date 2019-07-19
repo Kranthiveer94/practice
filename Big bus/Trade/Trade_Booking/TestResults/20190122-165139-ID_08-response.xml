@@ -1,0 +1,1 @@
+{ "status": "ERROR",  "code": "BB-211",   "message": "This is past date","bookingResult": {"status":"NOT_BOOKED"} }

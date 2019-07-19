@@ -1,0 +1,1 @@
+{ "status": "ERROR",  "code": "BB-201",   "message": "dateOfTravel is required","bookingResult": {"status":"NOT_BOOKED"} }

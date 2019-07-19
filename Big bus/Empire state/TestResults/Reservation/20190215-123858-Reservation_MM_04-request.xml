@@ -1,0 +1,40 @@
+{
+"reservationRequest": 
+{
+   "reservationFee": "5",
+   "currencyCode": "cash",
+   "paymentMethod": "USD",
+   "notes": "custom notes",
+   "reserveUntil": "2019-04-20",
+   "leadGuest":    
+   {
+      "firstname": "Vimala",
+      "lastname": "Pradaga",
+      "email": "vimala.pradaga@gmail.com",
+      "phone": "1234567890",
+      "mobile": "1234567890"
+   },
+   "products":
+   {
+   "product": 
+   [   
+   {
+      "productId": "101213",
+      "eventId": "0000654628-0000000219",
+      "dateOfTravel": "2019-04-20",
+      "items":       
+	  [
+         {
+            "category": "Adult",
+            "quantity": ""
+         },
+         {
+            "category": "Child",
+            "quantity": "1"
+         }
+      ]
+   }
+   ]
+   }
+}
+}

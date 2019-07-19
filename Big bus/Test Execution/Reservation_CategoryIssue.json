@@ -1,0 +1,31 @@
+{
+  "reservationRequest": {
+    "subAgentReference": "Bokun-subAgentCode",
+    "reservationFee": "5",
+    "currencyCode": "USD",
+    "paymentMethod": "cash",
+    "notes": "custom notes",
+    "reserveUntil": "2018-05-26",
+    "underName": {
+      "firstname": "Vimala",
+      "lastname": "Pradaga",
+      "email": "vimala.pradaga@gmail.com",
+      "phone": "1234567890",
+      "mobile": "1234567890"
+    },
+    "products": {
+      "product": [
+        {
+          "productId": "41226",
+          "dateOfTravel": "2018-05-25",
+          "items": [
+            {
+              "category": "Adult",
+              "quantity": "1"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{   "status": "ERROR",   "code": "BB-203",   "message": "quantity is required and it should be numeric value" ,"reservationResult": {"status":"NOT_RESERVED"} }

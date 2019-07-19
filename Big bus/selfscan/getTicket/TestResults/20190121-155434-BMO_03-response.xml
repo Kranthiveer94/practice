@@ -1,0 +1,24 @@
+{
+  "status": "SUCCESS",
+  "code": "200",
+  "message": "",
+  "bookingResult": {
+    "status": "SUCCESS",
+    "bookingReference": "d708e6db-2d71-412b-a55f-a6d7bffee558",
+    "userReference": "Chameleon: customRef123",
+    "shortReference": "LGUJ",
+    "dateOfBooking": "1545004800",
+    "currencyCode": "GBP",
+    "totalPrice": "20",
+    "leadGuest": {
+      "firstname": "Test",
+      "lastname": "Test",
+      "email": "abc@test.com",
+      "phone": "1234567890",
+      "mobile": "1234567890"
+    },
+    "branch": [
+      
+    ]
+  }
+}

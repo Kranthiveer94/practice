@@ -1,0 +1,52 @@
+{
+  "status": "SUCCESS",
+  "code": "",
+  "message": "",
+  "bookingResult": {
+    "status": "BOOKED",
+    "bookingReference": "d6d12f48-0596-458d-a687-32c41e483fc9",
+    "shortReference": "LRX5",
+    "dateOfBooking": "2019-02-15",
+    "leadGuest": {
+      "firstname": "Test",
+      "lastname": "Test",
+      "email": "abc@test.com",
+      "phone": "1234567890",
+      "mobile": "1234567890"
+    },
+    "products": {
+      "product": [
+        {
+          "productId": "54493",
+          "dateOfTravel": "2019-12-23",
+          "items": [
+            {
+              "category": "Child",
+              "quantity": "1",
+              "ticketType": "QR_CODE",
+              "ticketBarCode": "10159611|5|23122019|0[54493CH:1:3600:USD]15a4aea07d2b3928",
+              "message": null,
+              "image": null
+            },
+            {
+              "category": "Adult ",
+              "quantity": "1",
+              "ticketType": "QR_CODE",
+              "ticketBarCode": "10159612|5|23122019|0[54493AD:1:4680:USD]3277c022153bf335",
+              "message": null,
+              "image": null
+            },
+            {
+              "category": "Adult ",
+              "quantity": "1",
+              "ticketType": "QR_CODE",
+              "ticketBarCode": "10159613|5|23122019|0[54493AD:1:4680:USD]c118d2f64602ade8",
+              "message": null,
+              "image": null
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

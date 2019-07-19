@@ -1,0 +1,29 @@
+{
+  "requestType":"BookingCancellationRequest",
+  "data":{
+    "ApiKey":"cdqu60CykKeca1Qc000VXwgchV000L2fNOOf0bv9gPp",
+    "ResellerId":"1000",
+    "SupplierId":"1004",
+    "ExternalReference":"10051374722994000",
+    "Timestamp":"2018-03-30 00:00:00",
+    "Extension":{
+      "any":{
+        
+      }
+    },
+    "Parameter":{
+      "Name":{
+        "0":" "
+      },
+      "Value":{
+        
+      }
+    },
+    "BookingReference":"53c98d2e-fd72-4091-885e-cb30431f861a",
+    "SupplierConfirmationNumber":"b3d65898-82b3-4cac-88e3-eb9ad8175c9b",
+    "CancelDate":"2018-03-30",
+    "Author":"Customer Service",
+    "Reason":"No longer traveling",
+    "SupplierNote":"Refunded Customer"
+  }
+}

@@ -1,0 +1,1 @@
+{ "status": "ERROR",  "code": "400",   "message": "fromDate and toDate cannot be past date.","availabilityResult": {"status":"NOT_AVAILABLE"} }

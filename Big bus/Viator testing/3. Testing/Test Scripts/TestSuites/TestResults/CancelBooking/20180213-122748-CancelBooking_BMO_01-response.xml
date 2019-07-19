@@ -1,0 +1,1 @@
+{"responseType":"BookingCancellationResponse","data":{"ApiKey":"cdqu60CykKeca1Qc000VXwgchV000L2fNOOf0bv9gPp","ResellerId":"1000","SupplierId":"1004","ExternalReference":"10051374722994000","Timestamp":"2018-02-13 06:57:48","RequestStatus":{"Status":"ERROR","Error":{"ErrorCode":"BB-205", "ErrorMessage":"Invalid ApiKey"}}}}

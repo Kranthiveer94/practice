@@ -1,0 +1,37 @@
+{
+  "reservationRequest": {
+    "reservationFee": "",
+     "reservationReference": "1036b765-5cc2-4450-98df-2992bcc0ae5c",
+    
+    "currencyCode": "",
+    "paymentMethod": "",
+    "notes": "",
+    "reserveUntil": "",
+    "underName": {
+      "firstname": "",
+      "lastname": "",
+      "email": "",
+      "phone": "",
+      "mobile": ""
+    },
+    "products": {
+      "product": [
+        {
+          "productId": "3GZ00103",
+          "eventId": ""
+          "dateOfTravel": "",
+          "items": [
+            {
+              "category": "",
+              "quantity": "10"
+            },
+            {
+              "category": "",
+              "quantity": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

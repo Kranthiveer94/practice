@@ -1,0 +1,39 @@
+{
+  "requestType":"AvailabilityRequest",
+  "data":{
+    "ApiKey":"",
+    "ResellerId":"1000",
+    "SupplierId":"1004",
+    "ExternalReference":"10051374722994000",
+    "Timestamp":"2018-03-30 12:20:50",
+    "StartDate":"2018-03-03",
+    "EndDate":"2018-05-03",
+    "DeltaOnly":"false",
+    "SupplierProductCode":"24659",
+    "TourOptions":{
+      "SupplierOptionCode":"BON_PRI",
+      "SupplierOptionName":"BON_PRI",
+      "TourDepartureTime":"9:00:00",
+      "TourDuration":"PT1H",
+        "Option":{
+        "Name":"name",
+        "Value":"value"
+      },
+      "Language":{
+        "LanguageCode":"EN",
+        "LanguageOption":"GUIDE"
+      }
+    },
+    "AvailabilityHold":{
+      "Expiry":"PT300S"
+    },
+    "TravellerMix":{
+      "Adult":"1",
+      "Child":"1",
+      "Youth":"0",
+      "Infant":"0",
+      "Senior":"0",
+      "Total":"2"
+    }
+  }
+}

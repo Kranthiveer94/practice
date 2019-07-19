@@ -1,0 +1,1 @@
+{"responseType":"BookingCancellationResponse","data":{"ApiKey":"awdswefr","ResellerId":"1000","SupplierId":"1004","ExternalReference":"10051374722994000","Timestamp":"2018-02-14 14:42:59","RequestStatus":{"Status":"ERROR","Error":{"ErrorCode":"409", "ErrorMessage":"Invalid ApiKey"}}}}

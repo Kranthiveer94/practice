@@ -1,0 +1,1 @@
+{ "status": "ERROR",  "code": "BB-211",   "message": "Travel date cannot be past date","reservationResult": {"status":"NOT_AVAILABLE"} }

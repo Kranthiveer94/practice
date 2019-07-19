@@ -1,0 +1,44 @@
+{
+  "bookingRequest": {
+    "bookingFee": "5",
+    "reservationReference": "678d06bb-867b-4ed1-bc09-84bc509fc92b",
+    "agentBookingReference": "agentBookingReference123",
+    "currencyCode": "USD",
+    "paymentMethod": "cash",
+    "notes": "",
+    "ticketPerPassenger": "678d06bb-867b-4ed1-bc09-84bc509fc92b",
+    "leadGuest": {
+      "firstname": "1",
+      "lastname": "vimala",
+      "email": "pradaga",
+      "phone": "vimala.pradaga@gmail.com",
+      "mobile": "8099566093"
+    },
+    "products": {
+      "product": [
+        {
+          "productId": "8099566093",
+		"eventId": "3GZ00202",
+          "dateOfTravel": "0000654630-0000000219",
+           "preferences": "2018-04-22",
+          "discountAmount": "Window seat",
+          "discountCode": "4",
+          "promoCode": "discountCode 123",
+          "currencyCode": "discountCode 123",
+          "price": "USD",
+          "items": [
+            {
+              "category": "100",
+              "quantity": "Adult"
+            },
+            {
+              "category": "1",
+              "quantity": "Child"
+            }
+            
+          ]
+        }
+      ]
+    }
+  }
+}

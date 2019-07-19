@@ -1,0 +1,52 @@
+{
+  "status": "SUCCESS",
+  "code": "",
+  "message": "",
+  "bookingResult": {
+    "status": "BOOKED",
+    "bookingReference": "f144b041-f41b-42ea-818d-4ab85bcea73c",
+    "shortReference": "BGFC",
+    "dateOfBooking": "2018-04-02",
+    "leadGuest": {
+      "firstname": "vimala",
+      "lastname": "pradaga",
+      "email": "vimala.pradaga@gmail.com",
+      "phone": "8099566093",
+      "mobile": "8099566093"
+    },
+    "products": {
+      "product": [
+        {
+          "productId": "3GZ00103",
+          "dateOfTravel": "2018-05-10",
+          "items": [
+            {
+              "category": "ALL",
+              "quantity": "1",
+              "ticketType": "QR_CODE",
+              "ticketBarCode": "301030025000111125",
+              "message": null,
+              "image": null
+            },
+            {
+              "category": "ALL",
+              "quantity": "1",
+              "ticketType": "QR_CODE",
+              "ticketBarCode": "301030025000111123",
+              "message": null,
+              "image": null
+            },
+            {
+              "category": "ALL",
+              "quantity": "1",
+              "ticketType": "QR_CODE",
+              "ticketBarCode": "301030025000111124",
+              "message": null,
+              "image": null
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

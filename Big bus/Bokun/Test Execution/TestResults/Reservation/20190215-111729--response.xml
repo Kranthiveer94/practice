@@ -1,0 +1,40 @@
+{
+  "status": "SUCCESS",
+  "code": "",
+  "message": "",
+  "reservationResult": {
+    "status": "RESERVED",
+    "subAgentReference": "Bokun-subAgentCode",
+    "reservationReference": "4c8a346a-fe0f-4ea4-9453-f6add4ad7daf",
+    "dateOfReservation": "2019-02-15",
+    "reservationFee": "5",
+    "currencyCode": "",
+    "notes": "custom notes",
+    "reserveUntil": "2019-04-22",
+    "underName": {
+      "firstname": null,
+      "lastname": null,
+      "email": null,
+      "phone": null,
+      "mobile": null
+    },
+    "products": {
+      "product": [
+        {
+          "productId": "74503",
+          "dateOfTravel": "2019-04-22",
+          "items": [
+            {
+              "category": "Adult",
+              "quantity": "2"
+            },
+            {
+              "category": "Child",
+              "quantity": "1"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

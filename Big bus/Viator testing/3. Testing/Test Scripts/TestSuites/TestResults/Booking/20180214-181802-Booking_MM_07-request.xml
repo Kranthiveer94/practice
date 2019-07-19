@@ -1,0 +1,55 @@
+{
+	"requestType": "BookingRequest",
+	"data": {
+		"ApiKey": "6p+AIYvssp_=QZaFAELfvU-9qAD@xZbo*Vvj5?PbT_R",
+		"ResellerId": "1000",
+		"SupplierId": "1004",
+		"ExternalReference": "10051374722994000",
+		"Timestamp": "2018-03-03 00:00:00",
+		"BookingReference": "53c98d2e-fd72-4091-885e-cb30431f861a",
+		"TravelDate": "",
+		"SupplierProductCode": "14488",
+		"Location": "Sydney, Australia",
+		"TourOptions": {
+			"Language": {
+				"LanguageCode": "en",
+				"LanguageOption": "GUIDE"
+			},
+			"SupplierOptionCode": "9am",
+			"TourDepartureTime": "9:00:00",
+			"Option": [{
+				"Name": "DepartureTime",
+				"Value": "10:00:00"
+			}]
+		},
+		"Inclusions": {
+			"Inclusion": "Bottle of Champagne"
+		},
+		"CurrencyCode": "GBP",
+		"Amount": 100,
+	"Traveller": [{
+		"TravellerIdentifier": "1",
+		"TravellerTitle": "mrs",
+		"GivenName": "Vimala",
+		"Surname": "Pradaga",
+		"AgeBand": "ADULT",
+		"LeadTraveller": true
+	}],
+	"TravellerMix": {
+		"Adult": "1",
+		"Child": "1",
+		"Youth": "0",
+		"Infant": "0",
+		"Senior": "0",
+		"Total": "2"
+	},
+	"SpecialRequirement": "Please put me in the same group as the other travellers.",
+	"PickupPoint": "Hilton Sydney",
+	"ContactDetail": {
+		"ContactType": "ALTERNATE",
+		"ContactName": "Cust Name",
+		"ContactValue": "2345322"
+	},
+	"AvailabiltyHoldReference": "1K883383K2S12K883383K2S57K883383K2"
+}
+}

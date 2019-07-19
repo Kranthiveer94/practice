@@ -1,0 +1,52 @@
+{
+  "status": "SUCCESS",
+  "code": "",
+  "message": "",
+  "bookingResult": {
+    "status": "BOOKED",
+    "bookingReference": "85f50921-6c34-440a-844c-04a8d5ffd043",
+    "shortReference": "LRY8",
+    "dateOfBooking": "2019-02-15",
+    "leadGuest": {
+      "firstname": "Test",
+      "lastname": "Test",
+      "email": "abc@test.com",
+      "phone": "1234567890",
+      "mobile": "1234567890"
+    },
+    "products": {
+      "product": [
+        {
+          "productId": "54493",
+          "dateOfTravel": "2019-12-23",
+          "items": [
+            {
+              "category": "Child",
+              "quantity": "1",
+              "ticketType": "QR_CODE",
+              "ticketBarCode": "10160001|5|23122019|0[54493CH:1:3600:USD]7998a70a05b547e6",
+              "message": null,
+              "image": null
+            },
+            {
+              "category": "Adult ",
+              "quantity": "1",
+              "ticketType": "QR_CODE",
+              "ticketBarCode": "10160002|5|23122019|0[54493AD:1:4680:USD]9784dac9b2711f5f",
+              "message": null,
+              "image": null
+            },
+            {
+              "category": "Adult ",
+              "quantity": "1",
+              "ticketType": "QR_CODE",
+              "ticketBarCode": "10160003|5|23122019|0[54493AD:1:4680:USD]24cca7786329f772",
+              "message": null,
+              "image": null
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

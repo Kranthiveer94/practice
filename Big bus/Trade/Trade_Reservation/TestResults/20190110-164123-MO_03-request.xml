@@ -1,0 +1,25 @@
+{
+  "reservationRequest": {
+    "notes": "custom notes",
+    "underName": {
+      "firstname": "test",
+      "email": "test@test.com",
+      "phone": "1234567890",
+      "mobile": "1234567890"
+    },
+    "products": {
+      "product": [
+        {
+          "productId": "1836",
+          "dateOfTravel": "2019-12-30",
+          "items": [
+            {
+              "category": "Child",
+              "quantity": "2"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

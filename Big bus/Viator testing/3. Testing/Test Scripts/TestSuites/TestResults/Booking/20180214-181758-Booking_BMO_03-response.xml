@@ -1,0 +1,33 @@
+{
+  "responseType": "BookingResponse",
+  "data": {
+    "ApiKey": "6p+AIYvssp_=QZaFAELfvU-9qAD@xZbo*Vvj5?PbT_R",
+    "ResellerId": "1001",
+    "SupplierId": "1004",
+    "ExternalReference": "10051374722994000",
+    "Timestamp": "2018-02-14 12:47:58.599",
+    "RequestStatus": {
+      "Error": {
+        
+      },
+      "Status": "SUCCESS"
+    },
+    "TransactionStatus": {
+      "Status": "SUCCESS"
+    },
+    "Traveller": [
+      [
+        {
+          "ConfirmationNumber": "bd8e43e8-ba41-43e0-85cd-9d7a1482de20",
+          "TravellerBarcode": "5529411|1|03032018|1[14488CH:1:10000:GBP]fac1814e26aebc45",
+          "TravellerIdentifier": "1"
+        },
+        {
+          "ConfirmationNumber": "bd8e43e8-ba41-43e0-85cd-9d7a1482de20",
+          "TravellerBarcode": "5529412|1|03032018|1[14488AD:1:10000:GBP]dfa003878c6676eb",
+          "TravellerIdentifier": "1"
+        }
+      ]
+    ]
+  }
+}

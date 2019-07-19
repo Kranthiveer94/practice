@@ -1,0 +1,36 @@
+{"bookingRequest": {
+   "bookingFee": "",
+   "reservationReference": "3b9e18fa-3032-42af-9df8-b639d3b981c3",
+   "agentBookingReference": "",
+   "currencyCode": "",
+   "paymentMethod": "",
+   "notes": "",
+   "ticketPerPassenger": "",
+   "leadGuest":    {
+      "firstname": "vimala",
+      "lastname": "pradaga",
+      "email": "vimala.pradaga@gmail.com",
+      "phone": "8099566093",
+      "mobile": "8099566093"
+   },
+   "products": {"product": [   {
+      "productId": "3GZ00103",
+      "dateOfTravel": "2018-05-10",
+      "preferences": "",
+      "discountAmount": "",
+      "discountCode": "",
+      "promoCode": "",
+      "currencyCode": "",
+      "price": "Adult",
+      "items":       [
+                  {
+            "category": "2",
+            "quantity": "Child"
+         },
+                  {
+            "category": "1",
+            "quantity": "ProductList should be displayed"
+         }
+      ]
+   }]}
+}}

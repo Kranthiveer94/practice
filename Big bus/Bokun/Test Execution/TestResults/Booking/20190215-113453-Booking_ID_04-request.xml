@@ -1,0 +1,40 @@
+{
+  "bookingRequest": {
+    "bookingFee": "5",
+    "currencyCode": "USD",
+    "subAgentReference": "Bokun-subAgentCode",
+    "agentBookingReference": "d",
+    
+    "paymentMethod": "cash",
+    "notes": "d",
+    "ticketPerPassenger": "1",
+    "underName": {
+      "firstname": "vimala",
+      "lastname": "pradaga",
+      "email": "vimala.pradaga@gmail.com",
+      "phone": "8099566093",
+      "mobile": "8099566093"
+    },
+    "paid": "",
+    "products": {
+      "product": [
+        {
+          "productId": "74503",
+          "dateOfTravel": "2/2/19",
+          "preferences": "",
+          "discountAmount": "",
+          "discountCode": "",
+          "promoCode": "",
+          "currencyCode": "",
+          "price": "",
+          "items": [
+                       {
+              "category": "",
+              "quantity": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

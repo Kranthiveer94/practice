@@ -1,0 +1,1 @@
+{ "status":"ERROR", "code":"BB-402","message":"Transaction is already cancelled","cancelBookingResult": {"status": "NOT_CANCELLED" }}

@@ -1,0 +1,45 @@
+{
+   "status" : "SUCCESS",
+   "code" : "",
+   "message" : "",
+   "bookingResult" : {
+      "status" : "BOOKED",
+      "subAgentReference" : "Bokun-subAgentCode",
+      "bookingReference" : "801406c9-6a13-42d2-a8cf-9dbb241f29bd",
+      "shortReference" : "BI8C",
+      "dateOfBooking" : "2018-05-21",
+      "underName" : {
+         "firstname" : "Vimala",
+         "lastname" : "Pradaga",
+         "email" : "vimala.pradaga@gmail.com",
+         "phone" : "1234567890",
+         "mobile" : "1234567890"
+      },
+      "products" : {
+         "product" : [
+            {
+               "productId" : "41226",
+               "dateOfTravel" : "2018-05-25",
+               "items" : [
+                  {
+                     "category" : "Adult ",
+                     "quantity" : "1",
+                     "ticketType" : "QR_CODE",
+                     "ticketBarCode" : "5368441|4|25052018|1[41226AD:1:-100:USD]78abab3c411c6e5f",
+                     "message" : null,
+                     "image" : null
+                  },
+                  {
+                     "category" : "Child",
+                     "quantity" : "1",
+                     "ticketType" : "QR_CODE",
+                     "ticketBarCode" : "5368442|4|25052018|1[41226CH:1:-100:USD]6c8af262e064b6e0",
+                     "message" : null,
+                     "image" : null
+                  }
+               ]
+            }
+         ]
+      }
+   }
+}

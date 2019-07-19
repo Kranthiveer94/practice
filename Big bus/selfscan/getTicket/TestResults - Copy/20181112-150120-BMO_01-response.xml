@@ -1,0 +1,86 @@
+[
+  {
+    "date_of_booking": "2019-12-10T00:00:00",
+    "ticketing_id": 1,
+    "currency_code": "GBP",
+    "leadguest_surname": "Duncan",
+    "booking_status": "BOOKED",
+    "modified_by": null,
+    "justride_ticket_ids": "519872b4-2e2a-4268-a7bd-5aeb6278afcf",
+    "booking_channel": null,
+    "seller_name": null,
+    "effective_purchase_date": null,
+    "ticket_strategy": null,
+    "ticket_per_pax": null,
+    "modified_datetime": null,
+    "total_price": 250,
+    "booking_reference": "d1711545-84a5-43c1-a92a-6b863aed60d2",
+    "ticket_barcodes": {
+      "barcodes": [
+        {
+          "status": "LIVE",
+          "validFrom": "1544400000",
+          "validTill": "1560124800",
+          "passengers": [
+            {
+              "category": "Adult",
+              "quantity": 2,
+              "productPrice": "20"
+            },
+            {
+              "category": "Child",
+              "quantity": 1,
+              "productPrice": "10"
+            }
+          ],
+          "ticketType": "QR_CODE",
+          "usageInDays": "3",
+          "ticketBarCode": "XXXX-XXXX-XXXX",
+          "barCodeCategory": "HoHo",
+          "justRideTicketID": "XXXXXX",
+          "embeddedInBarcode": [
+            {
+              "id": 14660,
+              "name": "deluxe tour london"
+            }
+          ]
+        },
+        {
+          "status": "LIVE",
+          "validFrom": "1544400000",
+          "validTill": "1560124800",
+          "passengers": [
+            {
+              "category": "Adult",
+              "quantity": 2,
+              "productPrice": "0"
+            },
+            {
+              "category": "Child",
+              "quantity": 1,
+              "productPrice": "0"
+            }
+          ],
+          "ticketType": "QR_CODE",
+          "usageInDays": null,
+          "ticketBarCode": "XXXX-XXXX-XXXX",
+          "barCodeCategory": "Attr",
+          "justRideTicketID": "XXXXXX",
+          "embeddedInBarcode": [
+            {
+              "id": 123,
+              "name": "boat tour"
+            }
+          ]
+        }
+      ]
+    },
+    "branch_name": "London",
+    "created_datetime": null,
+    "branch_id": "1",
+    "short_reference": "S1R3",
+    "leadguest_email": "duncan@test.com",
+    "created_by": null,
+    "user_reference": "Chameleon: customRef123"
+  }
+]

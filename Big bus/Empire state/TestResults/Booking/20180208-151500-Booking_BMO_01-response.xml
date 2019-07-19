@@ -1,0 +1,1 @@
+{ "status":"ERROR","code":"BB-210", "message":"Invalid product.Possible product and category mistamtch.", "bookingResult": {"status":"NOT_BOOKED"} }

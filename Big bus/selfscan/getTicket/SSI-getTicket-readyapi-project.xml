@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="7423b57e-2454-4b53-84a4-a87ffa4f53d8" created="2.5.0" activeEnvironment="Default environment" name="SSI_getTicket" resourceRoot="" updated="2.5.0 2018-09-14T14:45:07Z" encryptionMode="Not encrypted" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.ProTestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value="XML"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="true"/>
+  <con:entry key="Export All" value="true"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Slack Channel(s)" value=""/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Test Suite Tags" value=""/>
+  <con:entry key="Select Report Type" value="JUnit-Style report for automation"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Test Suite" value="http://bb-mobile-api-d.ir-e1.cloudhub.io TestSuite"/>
+  <con:entry key="Run in-process" value="false"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="true"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Test Case Tags" value=""/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Test Case" value="BMO"/>
+  <con:entry key="Slack Access Token" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value="C:\Program Files\SmartBear\ReadyAPI-2.5.0\bin"/>
+  <con:entry key="Environment" value="Default environment"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value="${WORKSPACE}"/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" id="19e7d2f9-31ec-4776-8d25-a84e8c88e9eb" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://bb-mobile-api-d.ir-e1.cloudhub.io" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://bb-mobile-api-d.ir-e1.cloudhub.io</con:endpoint></con:endpoints><con:resource name="Duncan" path="/api/v1/getTicket/${DataSource#bookingRef}/${DataSource#surName}" id="29eeec92-993b-497c-8bed-643de5903604"><con:settings/><con:parameters/><con:method name="Duncan" id="59e67753-1790-4a06-a4a6-dbc6045db38e" method="GET"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200 206</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404 500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>404 403</con:status><con:params/><con:element xmlns:dun="http://bb-mobile-api-d.ir-e1.cloudhub.io/api/v1/getTicket/d1711545-84a5-43c1-a92a-6b863aed60d2/Duncan">dun:Fault</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=UTF-8</con:mediaType><con:status>503 500</con:status><con:params/><con:element xmlns:dun="http://bb-mobile-api-d.ir-e1.cloudhub.io/api/v1/getTicket/d1711545-84a5-43c1-a92a-6b863aed60d2/Duncan">dun:Fault</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html</con:mediaType><con:status>502</con:status><con:params/><con:element>html</con:element></con:representation><con:request name="Request 1" id="71f8f1b9-bfda-40f7-96b4-040cdfb2824e" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Authorization" value="V1dNdWxlU29mdDp1VGVaZ3ZuTHFBSHdCeXZSN1ZKaGhOaGhmTnlVTEhzNw"/>
+  &lt;con:entry key="Content-Type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>https://bb-mobile-api-t.ir-e1.cloudhub.io</con:endpoint><con:request/><con:originalUri>http://bb-mobile-api-d.ir-e1.cloudhub.io/api/v1/getTicket/d1711545-84a5-43c1-a92a-6b863aed60d2/Duncan</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="2d295969-8c7e-4700-9efe-032cdd86c961" name="TestSuite"><con:description>The test suite generated for the REST service [http://bb-mobile-api-d.ir-e1.cloudhub.io]</con:description><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:testCase id="94c6681c-691f-491f-8c8e-2edb3bc7a973" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Duncan TestCase" searchProperties="true" timeout="0" disabled="true"><con:description>The test case generated for the REST resource [Duncan] located at [/api/v1/getTicket/d1711545-84a5-43c1-a92a-6b863aed60d2/Duncan]</con:description><con:settings/><con:testStep type="restrequest" name="Request" id="287db28e-699c-425f-8836-0babab134e00"><con:settings/><con:config service="http://bb-mobile-api-d.ir-e1.cloudhub.io" resourcePath="/api/v1/getTicket/${DataSource#bookingRef}/${DataSource#surName}" methodName="Duncan" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request" id="f49f4ba9-55c3-4820-889d-9fd8edf18385" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Authorization" value="V1dNdWxlU29mdDp1VGVaZ3ZuTHFBSHdCeXZSN1ZKaGhOaGhmTnlVTEhzNw"/>
+  &lt;con:entry key="Content-Type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>https://bb-mobile-api-d.ir-e1.cloudhub.io</con:endpoint><con:request/><con:originalUri>https://bb-expedia-api-d.eu.cloudhub.io/api/1/sale/1001/d12e3d2b-4e0f-48a4-a895-8536dfef66ff</con:originalUri><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Request1" id="a971bdcb-c837-4d61-94dc-672d9f00c641" disabled="true"><con:settings/><con:config service="http://bb-mobile-api-d.ir-e1.cloudhub.io" resourcePath="/api/v1/getTicket/${DataSource#bookingRef}/${DataSource#surName}" methodName="Duncan" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request1" id="f49f4ba9-55c3-4820-889d-9fd8edf18385" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="x-request-identifier" value="${x-request-identifier}"/>
+  &lt;con:entry key="Accept" value="${Accept}"/>
+  &lt;con:entry key="x-request-authentication" value="${x-request-authentication}"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>https://bb-expedia-api-d.eu.cloudhub.io</con:endpoint><con:request/><con:originalUri>https://bb-expedia-api-d.eu.cloudhub.io/api/1/sale/1001/d12e3d2b-4e0f-48a4-a895-8536dfef66ff</con:originalUri><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:testCase id="01be4874-4359-4453-acca-515d9ef7a816" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="BMO" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword=""><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="properties" name="Properties" id="ae124d18-b984-4109-8c09-d89a8f13d6cf"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>SaveLocation</con:name><con:value>${projectDir}\TestResults\</con:value></con:property><con:property><con:name>Source</con:name><con:value>${projectDir}\getTicket-TestData.xls</con:value></con:property><con:property><con:name>TestDataSheetName</con:name><con:value>BMO</con:value></con:property><con:property><con:name>Filename</con:name><con:value>getTicket-TestData.xls</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="datasource" name="DataSource" id="05132cd6-2bf1-48d6-a49d-967204e57635"><con:settings/><con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dataSource type="Excel"><con:configuration><file>${projectDir}/getTicket-TestData.xls</file><worksheet>BMO</worksheet><cell>A7</cell><ignoreEmpty>true</ignoreEmpty><evaluateFormulas>true</evaluateFormulas></con:configuration></con:dataSource><con:shared>true</con:shared><con:restartShared>true</con:restartShared><con:property>TestCaseID</con:property><con:property>Description (optional)</con:property><con:property>bookingRef</con:property><con:property>surName</con:property><con:property>Content-Type</con:property><con:property>client_id</con:property><con:property>client_secret</con:property><con:property>Endpoint</con:property><con:property>Request</con:property><con:property>Response</con:property><con:property>Status</con:property><con:completeLastOperation>true</con:completeLastOperation><con:restartOnRun>true</con:restartOnRun></con:config></con:testStep><con:testStep type="restrequest" name="Request" id="d9ba5b70-035b-4760-9481-d14c9c7f0eac"><con:settings/><con:config service="http://bb-mobile-api-d.ir-e1.cloudhub.io" resourcePath="/api/v1/getTicket/${DataSource#bookingRef}/${DataSource#surName}" methodName="Duncan" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request" id="71f8f1b9-bfda-40f7-96b4-040cdfb2824e" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="client_secret" value="${DataSource#client_secret}"/>
+  &lt;con:entry key="client_id" value="${DataSource#client_id}"/>
+  &lt;con:entry key="Content-Type" value="${DataSource#Content-Type}"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>${DataSource#Endpoint}</con:endpoint><con:request/><con:originalUri>http://bb-mobile-api-d.ir-e1.cloudhub.io/api/v1/getTicket/d1711545-84a5-43c1-a92a-6b863aed60d2/Duncan</con:originalUri><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="SaveXmls" id="8666d134-f055-4d6f-acdb-c4cb84d592ad"><con:settings/><con:config><script>def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+def name = context.expand( '${Properties#Filename}' )
+def location = context.expand( '${Properties#SaveLocation}' )
+def getResponseFilename(name) {
+   count = ( testRunner.testCase.testSteps["DataSource"].currentRow )
+   date = new Date()
+   dateFormat = new java.text.SimpleDateFormat('yyyyMMdd-kkmmss')
+   shortDate = dateFormat.format(date)
+def testCaseID = context.expand( '${DataSource#TestCaseID}' )
+   respFilename = shortDate + "-" + testCaseID + "-response.xml"  // implicitely returned
+}
+
+def getRequestFilename(name) {  
+	def testCaseID = context.expand( '${DataSource#TestCaseID}' ) 
+	reqFilename = shortDate + "-" + testCaseID + "-request.xml"  // implicitely returned
+}
+	
+def file = new PrintWriter (location + getResponseFilename(name))
+def Response = testRunner.testCase.testSteps["Request"].testRequest.response.contentAsString
+file.println(Response)
+file.flush()
+file.close()
+
+def file2 = new PrintWriter (location + getRequestFilename(name))
+def Request = context.expand( '${Request#Request}' )
+file2.println(Request)
+file2.flush()
+file2.close()</script></con:config></con:testStep><con:testStep type="groovy" name="Validate" id="b079db38-455e-4d70-9f97-065bbd3245d9"><con:settings/><con:config><script>def httpValue = testRunner.testCase.testSteps['Request'].testRequest.response.getResponseHeaders()
+log.info httpValue
+def status = httpValue["#status#"].toString()
+log.info status
+
+return status.contains('200') ? "PASS" : "FAIL"</script></con:config></con:testStep><con:testStep type="datasink" name="DataSink" id="b349dbe5-f737-49c3-b7db-de1902c30cf1"><con:settings/><con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dataSink type="Excel"><con:configuration><file>${projectDir}/getTicket-TestData.xls</file><outfile>${projectDir}/getTicket-TestData.xls</outfile><worksheet>BMO</worksheet><cell>I7</cell><evaluateFormulas>true</evaluateFormulas><append>false</append></con:configuration></con:dataSink><con:properties><con:property><con:name>Request</con:name><con:value>${Request#Request}</con:value></con:property><con:property><con:name>Response</con:name><con:value>${Request#RawResponse}</con:value></con:property><con:property><con:name>Status</con:name><con:value>${Validate#result}</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="datasourceloop" name="DataSource Loop" id="9754aef4-f03b-434a-b3a7-9d2f3a91ca66"><con:settings/><con:config><dataSourceStep>DataSource</dataSourceStep><targetStep>Request</targetStep><discardResults>true</discardResults></con:config></con:testStep><con:testStep type="delay" name="Delay" id="f84494b0-3184-4789-b731-b6015dcbf4f9"><con:settings/><con:config><delay>1000</delay></con:config></con:testStep><con:properties/><con:reportParameters/><con:breakPoints><con:testStepId>b079db38-455e-4d70-9f97-065bbd3245d9</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints></con:testCase><con:testCase id="6511b591-5ab5-4100-ba96-adebfaf6ea8e" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="MM" searchProperties="true" timeout="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="properties" name="Properties" id="19b6b826-43b1-4784-89b1-ccf40b1b39cb"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>SaveLocation</con:name><con:value>${projectDir}\TestResults\</con:value></con:property><con:property><con:name>Source</con:name><con:value>${projectDir}\getTicket-TestData.xls</con:value></con:property><con:property><con:name>TestDataSheetName</con:name><con:value>MM</con:value></con:property><con:property><con:name>Filename</con:name><con:value>getTicket-TestData.xls</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="datasource" name="DataSource" id="b31cadf6-aed0-413e-9c99-8b8614151064"><con:settings/><con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dataSource type="Excel"><con:configuration><file>${projectDir}/getTicket-TestData.xls</file><worksheet>MM</worksheet><cell>A7</cell><ignoreEmpty>true</ignoreEmpty><evaluateFormulas>true</evaluateFormulas></con:configuration></con:dataSource><con:shared>true</con:shared><con:restartShared>true</con:restartShared><con:property>TestCaseID</con:property><con:property>Description (optional)</con:property><con:property>bookingRef</con:property><con:property>surName</con:property><con:property>Content-Type</con:property><con:property>client_id</con:property><con:property>client_secret</con:property><con:property>Endpoint</con:property><con:property>Request</con:property><con:property>Response</con:property><con:property>Status</con:property><con:completeLastOperation>true</con:completeLastOperation><con:restartOnRun>true</con:restartOnRun></con:config></con:testStep><con:testStep type="restrequest" name="Request" id="15bc4148-789e-43ea-864d-ce5d098e0d32"><con:settings/><con:config service="http://bb-mobile-api-d.ir-e1.cloudhub.io" resourcePath="/api/v1/getTicket/${DataSource#bookingRef}/${DataSource#surName}" methodName="Duncan" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request" id="71f8f1b9-bfda-40f7-96b4-040cdfb2824e" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="client_secret" value="${DataSource#client_secret}"/>
+  &lt;con:entry key="client_id" value="${DataSource#client_id}"/>
+  &lt;con:entry key="Content-Type" value="${DataSource#Content-Type}"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>https://bb-mobile-api-d.ir-e1.cloudhub.io</con:endpoint><con:request/><con:originalUri>http://bb-mobile-api-d.ir-e1.cloudhub.io/api/v1/getTicket/d1711545-84a5-43c1-a92a-6b863aed60d2/Duncan</con:originalUri><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="SaveXmls" id="59b51121-bd8c-45a9-876c-7c553daaf943"><con:settings/><con:config><script>def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+def name = context.expand( '${Properties#Filename}' )
+def location = context.expand( '${Properties#SaveLocation}' )
+def getResponseFilename(name) {
+   count = ( testRunner.testCase.testSteps["DataSource"].currentRow )
+   date = new Date()
+   dateFormat = new java.text.SimpleDateFormat('yyyyMMdd-kkmmss')
+   shortDate = dateFormat.format(date)
+def testCaseID = context.expand( '${DataSource#TestCaseID}' )
+   respFilename = shortDate + "-" + testCaseID + "-response.xml"  // implicitely returned
+}
+
+def getRequestFilename(name) {  
+	def testCaseID = context.expand( '${DataSource#TestCaseID}' ) 
+	reqFilename = shortDate + "-" + testCaseID + "-request.xml"  // implicitely returned
+}
+	
+def file = new PrintWriter (location + getResponseFilename(name))
+def Response = testRunner.testCase.testSteps["Request"].testRequest.response.contentAsString
+file.println(Response)
+file.flush()
+file.close()
+
+def file2 = new PrintWriter (location + getRequestFilename(name))
+def Request = context.expand( '${Request#Request}' )
+file2.println(Request)
+file2.flush()
+file2.close()</script></con:config></con:testStep><con:testStep type="groovy" name="Validate" id="d8587a38-8aad-4124-bf49-537e6785188b"><con:settings/><con:config><script>def httpValue = testRunner.testCase.testSteps['Request'].testRequest.response.getResponseHeaders()
+log.info httpValue
+def status = httpValue["#status#"].toString()
+log.info status
+
+return status.contains('200') ? "PASS" : "FAIL"</script></con:config></con:testStep><con:testStep type="datasink" name="DataSink" id="d135779e-ad71-4d39-9ad3-ad310d031487"><con:settings/><con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dataSink type="Excel"><con:configuration><file>${projectDir}/getTicket-TestData.xls</file><outfile>${projectDir}/getTicket-TestData.xls</outfile><worksheet>MM</worksheet><cell>I7</cell><evaluateFormulas>true</evaluateFormulas><append>false</append></con:configuration></con:dataSink><con:properties><con:property><con:name>Request</con:name><con:value>${Request#Request}</con:value></con:property><con:property><con:name>Response</con:name><con:value>${Request#RawResponse}</con:value></con:property><con:property><con:name>Status</con:name><con:value>${Validate#result}</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="datasourceloop" name="DataSource Loop" id="e5c2cb14-c6cb-46af-9ed1-b9cc9df2ab09"><con:settings/><con:config><dataSourceStep>DataSource</dataSourceStep><targetStep>Request</targetStep><discardResults>true</discardResults></con:config></con:testStep><con:testStep type="delay" name="Delay" id="c91a8dea-f87a-43b3-a6ea-b074a2eb273a"><con:settings/><con:config><delay>1000</delay></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:testCase id="b242ce2a-3c89-40c1-8b89-dbac7b7db5f8" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="ID" searchProperties="true" timeout="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="properties" name="Properties" id="2f41789e-c363-47ba-98a5-6c1ca5b2e290"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>SaveLocation</con:name><con:value>${projectDir}\TestResults\</con:value></con:property><con:property><con:name>Source</con:name><con:value>${projectDir}\getTicket-TestData.xls</con:value></con:property><con:property><con:name>TestDataSheetName</con:name><con:value>ID</con:value></con:property><con:property><con:name>Filename</con:name><con:value>getTicket-TestData.xls</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="datasource" name="DataSource" id="aa7eef53-339c-4762-9652-6e08f9b00c61"><con:settings/><con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dataSource type="Excel"><con:configuration><file>${projectDir}/getTicket-TestData.xls</file><worksheet>ID</worksheet><cell>A7</cell><ignoreEmpty>true</ignoreEmpty><evaluateFormulas>true</evaluateFormulas></con:configuration></con:dataSource><con:shared>true</con:shared><con:restartShared>true</con:restartShared><con:property>TestCaseID</con:property><con:property>Description (optional)</con:property><con:property>bookingRef</con:property><con:property>surName</con:property><con:property>Content-Type</con:property><con:property>client_id</con:property><con:property>client_secret</con:property><con:property>Endpoint</con:property><con:completeLastOperation>true</con:completeLastOperation><con:restartOnRun>true</con:restartOnRun></con:config></con:testStep><con:testStep type="restrequest" name="Request" id="b68e800b-6e43-4836-be30-843266219bd3"><con:settings/><con:config service="http://bb-mobile-api-d.ir-e1.cloudhub.io" resourcePath="/api/v1/getTicket/${DataSource#bookingRef}/${DataSource#surName}" methodName="Duncan" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request" id="71f8f1b9-bfda-40f7-96b4-040cdfb2824e" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="client_secret" value="${client_secret}"/>
+  &lt;con:entry key="client_id" value="${client_id}"/>
+  &lt;con:entry key="Content-Type" value="${Content-Type}"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>https://bb-mobile-api-d.ir-e1.cloudhub.io</con:endpoint><con:request/><con:originalUri>http://bb-mobile-api-d.ir-e1.cloudhub.io/api/v1/getTicket/d1711545-84a5-43c1-a92a-6b863aed60d2/Duncan</con:originalUri><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="SaveXmls" id="74bfad9f-307c-4ac9-81b5-951d03cb0683"><con:settings/><con:config><script>def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+def name = context.expand( '${Properties#Filename}' )
+def location = context.expand( '${Properties#SaveLocation}' )
+def getResponseFilename(name) {
+   count = ( testRunner.testCase.testSteps["DataSource"].currentRow )
+   date = new Date()
+   dateFormat = new java.text.SimpleDateFormat('yyyyMMdd-kkmmss')
+   shortDate = dateFormat.format(date)
+def testCaseID = context.expand( '${DataSource#TestCaseID}' )
+   respFilename = shortDate + "-" + testCaseID + "-response.xml"  // implicitely returned
+}
+
+def getRequestFilename(name) {  
+	def testCaseID = context.expand( '${DataSource#TestCaseID}' ) 
+	reqFilename = shortDate + "-" + testCaseID + "-request.xml"  // implicitely returned
+}
+	
+def file = new PrintWriter (location + getResponseFilename(name))
+def Response = testRunner.testCase.testSteps["Request"].testRequest.response.contentAsString
+file.println(Response)
+file.flush()
+file.close()
+
+def file2 = new PrintWriter (location + getRequestFilename(name))
+def Request = context.expand( '${Request#Request}' )
+file2.println(Request)
+file2.flush()
+file2.close()</script></con:config></con:testStep><con:testStep type="groovy" name="Validate" id="d173364a-b5aa-4fbe-854b-be230a930025"><con:settings/><con:config><script>def httpValue = testRunner.testCase.testSteps['Request'].testRequest.response.getResponseHeaders()
+log.info httpValue
+def status = httpValue["#status#"].toString()
+log.info status
+
+return status.contains('200') ? "PASS" : "FAIL"</script></con:config></con:testStep><con:testStep type="datasink" name="DataSink" id="9cb02291-d976-423a-b977-da99ed387e35"><con:settings/><con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dataSink type="Excel"><con:configuration><file>${projectDir}/getTicket-TestData.xls</file><outfile>${projectDir}/getTicket-TestData.xls</outfile><worksheet>ID</worksheet><cell>I7</cell><evaluateFormulas>true</evaluateFormulas><append>false</append></con:configuration></con:dataSink><con:properties><con:property><con:name>Request</con:name><con:value>${Request#Request}</con:value></con:property><con:property><con:name>Response</con:name><con:value>${Request#RawResponse}</con:value></con:property><con:property><con:name>Status</con:name><con:value>${Validate#result}</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="datasourceloop" name="DataSource Loop" id="a742a601-0f25-4abf-b47d-178d82756e9e"><con:settings/><con:config><dataSourceStep>DataSource</dataSourceStep><targetStep>Request</targetStep><discardResults>true</discardResults></con:config></con:testStep><con:testStep type="delay" name="Delay" id="c1fd4dbb-c866-4a43-a9b3-84b4effe2cb7"><con:settings/><con:config><delay>1000</delay></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:testCase id="5b5708e5-ccc5-462a-a8a9-ca8cb4af94e7" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Headers" searchProperties="true" timeout="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="properties" name="Properties" id="5cdbb8e7-c5b1-4e69-b601-7e8e89c09da9"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>SaveLocation</con:name><con:value>${projectDir}\TestResults\</con:value></con:property><con:property><con:name>Source</con:name><con:value>${projectDir}\getTicket-TestData.xls</con:value></con:property><con:property><con:name>TestDataSheetName</con:name><con:value>Headers</con:value></con:property><con:property><con:name>Filename</con:name><con:value>getTicket-TestData.xls</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="datasource" name="DataSource" id="d3286e34-05b6-4ba1-aab8-c090cbe7c4ee"><con:settings/><con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dataSource type="Excel"><con:configuration><file>${projectDir}/getTicket-TestData.xls</file><worksheet>Headers</worksheet><cell>A7</cell><ignoreEmpty>true</ignoreEmpty><evaluateFormulas>true</evaluateFormulas></con:configuration></con:dataSource><con:shared>true</con:shared><con:restartShared>true</con:restartShared><con:property>TestCaseID</con:property><con:property>Description (optional)</con:property><con:property>bookingRef</con:property><con:property>surName</con:property><con:property>Content-Type</con:property><con:property>client_id</con:property><con:property>client_secret</con:property><con:property>Endpoint</con:property><con:completeLastOperation>true</con:completeLastOperation><con:restartOnRun>true</con:restartOnRun></con:config></con:testStep><con:testStep type="restrequest" name="Request" id="ca365360-5dee-477d-917a-a156465ce4ba"><con:settings/><con:config service="http://bb-mobile-api-d.ir-e1.cloudhub.io" resourcePath="/api/v1/getTicket/${DataSource#bookingRef}/${DataSource#surName}" methodName="Duncan" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request" id="71f8f1b9-bfda-40f7-96b4-040cdfb2824e" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="client_secret" value="${client_secret}"/>
+  &lt;con:entry key="client_id" value="${client_id}"/>
+  &lt;con:entry key="Content-Type" value="${Content-Type}"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>https://bb-mobile-api-d.ir-e1.cloudhub.io</con:endpoint><con:request/><con:originalUri>http://bb-mobile-api-d.ir-e1.cloudhub.io/api/v1/getTicket/d1711545-84a5-43c1-a92a-6b863aed60d2/Duncan</con:originalUri><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="SaveXmls" id="e1bacad7-1ee3-486b-84fd-1e8612cea3b0"><con:settings/><con:config><script>def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context )
+def name = context.expand( '${Properties#Filename}' )
+def location = context.expand( '${Properties#SaveLocation}' )
+def getResponseFilename(name) {
+   count = ( testRunner.testCase.testSteps["DataSource"].currentRow )
+   date = new Date()
+   dateFormat = new java.text.SimpleDateFormat('yyyyMMdd-kkmmss')
+   shortDate = dateFormat.format(date)
+def testCaseID = context.expand( '${DataSource#TestCaseID}' )
+   respFilename = shortDate + "-" + testCaseID + "-response.xml"  // implicitely returned
+}
+
+def getRequestFilename(name) {  
+	def testCaseID = context.expand( '${DataSource#TestCaseID}' ) 
+	reqFilename = shortDate + "-" + testCaseID + "-request.xml"  // implicitely returned
+}
+	
+def file = new PrintWriter (location + getResponseFilename(name))
+def Response = testRunner.testCase.testSteps["Request"].testRequest.response.contentAsString
+file.println(Response)
+file.flush()
+file.close()
+
+def file2 = new PrintWriter (location + getRequestFilename(name))
+def Request = context.expand( '${Request#Request}' )
+file2.println(Request)
+file2.flush()
+file2.close()</script></con:config></con:testStep><con:testStep type="groovy" name="Validate" id="08f35dad-d87b-4e7e-bc27-9787091188de"><con:settings/><con:config><script>def httpValue = testRunner.testCase.testSteps['Request'].testRequest.response.getResponseHeaders()
+log.info httpValue
+def status = httpValue["#status#"].toString()
+log.info status
+
+return status.contains('200') ? "PASS" : "FAIL"</script></con:config></con:testStep><con:testStep type="datasink" name="DataSink" id="a21b13e7-5de7-48d5-b068-94e05d2d44f8"><con:settings/><con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dataSink type="Excel"><con:configuration><file>${projectDir}/getTicket-TestData.xls</file><outfile>${projectDir}/getTicket-TestData.xls</outfile><worksheet>Headers</worksheet><cell>I7</cell><evaluateFormulas>false</evaluateFormulas><append>false</append></con:configuration></con:dataSink><con:properties><con:property><con:name>Request</con:name><con:value>${Request#Request}</con:value></con:property><con:property><con:name>Response</con:name><con:value>${Request#RawResponse}</con:value></con:property><con:property><con:name>Status</con:name><con:value>${Validate#result}</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="datasourceloop" name="DataSource Loop" id="dd0cf875-6378-4a50-a28a-f354be563edf"><con:settings/><con:config><dataSourceStep>DataSource</dataSourceStep><targetStep>Request</targetStep><discardResults>true</discardResults></con:config></con:testStep><con:testStep type="delay" name="Delay" id="87c55e7c-64b5-4bc6-81be-fac3b9d273a6"><con:settings/><con:config><delay>1000</delay></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:savedRecentRuns>1</con:savedRecentRuns><con:requirements/><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:jmsConnectionContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:reporting><con:reportTemplates/><con:xmlTemplates/><con:xmlTemplates/><con:parameters/><con:parameters/></con:reporting><con:reporting/><con:eventHandlers type="RequestFilter.filterRequest" name="RequestFilter.filterRequest"><con:script>// Sample event script to add custom HTTP header to all outgoing REST, SOAP and HTTP(S) calls
+// This code is often used for adding custom authentication to SoapUI Pro tests
+
+// If hardcoding the token, uncomment and change line 5
+// def token = '4567'
+
+// If your token is parameterized in Project level custom property, uncomment line 8
+// def token = request.parent.testCase.testSuite.project.getProperty('auth_token').getValue()
+
+// To modify all outgoing calls, remove comments from lines 11 to 16
+// def headers = request.requestHeaders
+// if (headers.containsKey('auth_token2') == false) {
+//   headers.put('auth_token2', token)
+//   request.requestHeaders = headers
+// }</con:script></con:eventHandlers><con:eventHandlers type="TestRunListener.afterStep" name="TestRunListener.afterStep"><con:script>// Save all test step results into files
+// Change the directory path in line 5 to a location where you want to store details
+// then uncomment lines 5 to 10
+
+// filePath = 'C:\\tempOutputDirectory\\'
+// fos = new FileOutputStream(filePath + testStepResult.testStep.label + '.txt', true)
+// pw = new PrintWriter(fos)
+// testStepResult.writeTo(pw)
+// pw.close()
+// fos.close()</con:script></con:eventHandlers><con:authRepository/><con:tags/></con:soapui-project>

@@ -1,0 +1,39 @@
+{
+  "status": "SUCCESS",
+  "code": "",
+  "message": "",
+  "reservationResult": {
+    "status": "RESERVED",
+    "reservationReference": "64dd6d98-0f52-4376-a130-97cb5b41b43a",
+    "dateOfReservation": "2018-03-23",
+    "reservationFee": "5",
+    "currencyCode": "cash",
+    "notes": "custom notes",
+    "reserveUntil": "2018-04-22",
+    "leadGuest": {
+      "firstname": null,
+      "lastname": null,
+      "email": null,
+      "phone": null,
+      "mobile": null
+    },
+    "products": {
+      "product": [
+        {
+          "productId": "3GZ00103",
+          "dateOfTravel": "2018-04-22",
+          "items": [
+            {
+              "category": "Adult",
+              "quantity": "2"
+            },
+            {
+              "category": "Child",
+              "quantity": "1"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

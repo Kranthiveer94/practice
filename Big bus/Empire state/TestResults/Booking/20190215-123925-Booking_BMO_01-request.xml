@@ -1,0 +1,39 @@
+{
+ "bookingRequest": {
+   "reservationFee": "5",
+   "currencyCode": "USD",
+   "reservationReference": "",
+   "paymentMethod": "cash",
+   "notes": "custom notes",
+   "ticketPerPassenger": "1",
+   "reserveUntil": "2019-12-28",
+   "leadGuest": {
+     "firstname": "Test",
+     "lastname": "Test",
+     "email": "abc@test.com",
+     "phone": "1234567890",
+     "mobile": "1234567890"
+   },
+   "paid": "0",
+   "products": {
+     "product": [
+       {
+         "productId": "101213",
+           "dateOfTravel": "2019-12-23",
+         "items": [
+           {
+             "category": "Adult",
+             "quantity": "2",
+             "price": ""
+           },
+           {
+             "category": "Child",
+             "quantity": "1",
+             "price": ""
+           }
+         ]
+       }
+     ]
+   }
+ }
+}

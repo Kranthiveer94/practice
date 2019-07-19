@@ -1,0 +1,36 @@
+{"bookingRequest": {
+   "bookingFee": "",
+   "reservationReference": "[]",
+   "agentBookingReference": "",
+   "currencyCode": "",
+   "paymentMethod": "",
+   "notes": "",
+   "ticketPerPassenger": "",
+   "leadGuest":    {
+      "firstname": "vimala",
+      "lastname": "pradaga",
+      "email": "vimala.pradaga@gmail.com",
+      "phone": "8099566093",
+      "mobile": "8099566093"
+   },
+   "products": {"product": [   {
+      "productId": "",
+      "dateOfTravel": "2019-05-10",
+      "preferences": "",
+      "discountAmount": "",
+      "discountCode": "",
+      "promoCode": "",
+      "currencyCode": "",
+      "price": "",
+      "items":       [
+                  {
+            "category": "Adult",
+            "quantity": "2"
+         },
+                  {
+            "category": "Child",
+            "quantity": "1"
+         }
+      ]
+   }]}
+}}
